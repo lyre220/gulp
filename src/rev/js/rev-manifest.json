@@ -1,0 +1,9 @@
+{
+  "acc/traderpw/traderpw_set.js": "acc/traderpw/traderpw_set.js",
+  "common/common.js": "common/common.js",
+  "common/pubPopup.js": "common/pubPopup.js",
+  "common/template.js": "common/template.js",
+  "data/acc/traderpw/ajax_traderpw_set.js": "data/acc/traderpw/ajax_traderpw_set.js",
+  "data/common/operate.js": "data/common/operate.js",
+  "data/common/mock.js": "data/common/mock.js"
+}
