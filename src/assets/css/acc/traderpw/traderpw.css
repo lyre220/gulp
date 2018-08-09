@@ -13,10 +13,11 @@
 .forgotPassword {float: right;color: #00aaee;font-size: 1.2rem;padding-right: 10px; }
 
 /*设置交易密码成功*/
-.mt-50{margin-top:50px;}
+.mt-50{margin-top:50px;;}
+.mt-100{margin-top:100px;}
 .acc-traderpw-success{width:100%;padding:0 20px;text-align:center;}
 .acc-traderpw-success .ic-success {color: #23c768;font-size: 5rem;}
-.acc-traderpw-success .ic-closed{color: #de3939;;font-size: 5rem;}
+.acc-traderpw-success .ic-closed{color: #de3939;font-size: 5rem;}
 .ic-success:after {content: '\e646';}
 .acc-traderpw-success .text{font-size:1.4rem;color:#999;}
 
@@ -39,3 +40,4 @@
 .acc-traderpw-tell .input-item .pub-btn{ height:30px;line-height:28px;}
 .acc-traderpw-tell-tips{ display:none;margin-top:15px;height:30px;line-height:30px;text-align:center;background-color:#fff9df;font-size:1.5rem;color:#999;}
 .acc-traderpw-tell-tips em{ color:#1f8ff3;}
+

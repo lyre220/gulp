@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* .acc-contact-service{
+    text-align: center;
+} */
+
+/*客服服务时间*/
+
+.service-time {
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.5rem;
+    color: #FFAB1C;
+    text-align: center;
+}
+
+/* 客服联系方式 */
+
+.contact-way {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.contact-way span {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.contact-way span:nth-of-type(1) {
+    color: #424242;
+}
+
+.contact-way span:nth-of-type(2) {
+    color: #AAAAAA;
+    padding-left: 10px;
+}
+
+.contact-way button {
+    padding: 8px 15px;
+    color: #1F8FF3;
+    border: 1px solid #1F8FF3;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.border-b {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+/* 客服二维码遮罩弹出层 */
+/*全屏遮罩层*/
+.pop-coverbg {
+    /* display: block; */
+}
+.service-wechat{
+    width: 80%;
+    margin: 120px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+.service-wechat img{
+    width: 158px;
+    height: 158px;
+    max-width: 100%;
+    max-height: 158px;
+    margin:30px 0 10px;
+}
+.service-wechat p{
+    font-size: 1.4rem;
+    color: #030303;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #E9E9E9;
+}
+.close{
+    height: 45px;
+    line-height: 45px;
+}
+.ic-close{
+    font-size: 20px;
+    color:#999999;
+}

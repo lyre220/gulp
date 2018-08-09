@@ -14,6 +14,7 @@ define(function(require, exports, module) {
          * 获取手机状态
          */
         GetPhoneStata:function(){
+            console.log('GetPhoneStata');
             ajaxdata.OperateRemote.ajaxGetPhoneStata.success = function(data){
                 var phone = data.phone;
                 var phoneVal = phone.substr(0, 3) + '****' + phone.substr(7);
@@ -27,17 +28,19 @@ define(function(require, exports, module) {
             ajaxdata.OperateRemote.ajaxGetPhoneStata.submit();
         },
         /**
-         * 校验手机号码
+         * 获取验证码
          */
         getIdentifyCode:function(tellphone){
-            var success = function(num,result){
-                identifyCode.endTimeCode();
-                Popup.noticeTis(result.errorMsg);
-            };
-            var error = function(result){
-                Popup.noticeTis(result.errorMsg);
-            };
-            operateAjax.sendIdentifyCode(tellphone,success,error);
+
+            // console.log('getIdentifyCode');
+            // var success = function(num,result){
+            //     identifyCode.endTimeCode();
+            //     Popup.noticeTis(result.errorMsg);
+            // };
+            // var error = function(result){
+            //     Popup.noticeTis(result.errorMsg);
+            // };
+            // operateAjax.sendIdentifyCode(tellphone,success,error);
         },
 
     };
@@ -71,6 +74,7 @@ define(function(require, exports, module) {
         /**
          * 获取手机状态
          */
+        console.log('initData');
          initMethod.GetPhoneStata();
 
     }
@@ -82,10 +86,12 @@ define(function(require, exports, module) {
         /**
          * 获取验证码
          */
+        console.log('initEvent');
         curWindow.on('click','[data-action="getIdentifyCodeBtn"]',function () {
             if(!$(this).hasClass('active')){
                 var tel = $('#telNum').attr('data-tell');
-                identifyCode.getIdentifyCode(tel);
+                initMethod.getIdentifyCode(tel);
+                // identifyCode.getIdentifyCode(tel);
             }
         });
     }
