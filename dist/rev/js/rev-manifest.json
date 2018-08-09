@@ -1,0 +1,10 @@
+{
+  "acc/traderpw/traderpw_set.js": "acc/traderpw/traderpw_set-a8f84206a2.js",
+  "common/common.js": "common/common-ffcc071baa.js",
+  "common/cssHref.js": "common/cssHref-ecc9af941c.js",
+  "common/pubPopup.js": "common/pubPopup-d97af4ce93.js",
+  "common/template.js": "common/template-e0c328b188.js",
+  "data/acc/traderpw/ajax_traderpw_set.js": "data/acc/traderpw/ajax_traderpw_set-f70c35df11.js",
+  "data/common/mock.js": "data/common/mock-81e7ad2d9a.js",
+  "data/common/operate.js": "data/common/operate-230a0e5808.js"
+}
