@@ -25,17 +25,24 @@
         <div class="acc-traderpw">
             <h1 class="sub-item-hd">账号验证</h1>
             <div class="acc-traderpw-tell"></div>
-            <h1 class="sub-item-hd">请重设交易密码</h1>
+            <h1 class="sub-item-hd">设置交易密码</h1>
             <label class="input-item">
-                <span class="mark">交易密码</span>
-                <input type="password" class="flex pub-input" name="transactionPwd" placeholder="6位纯数字" maxlength="6">
+                <span class="mark">旧密码</span>
+                <input type="password" class="flex pub-input" name="transactionPwd" placeholder="输入旧密码" maxlength="6">
+            </label>
+            <label class="input-item mt-10">
+                <span class="mark">新密码</span>
+                <input type="password" class="flex pub-input" name="transactionPwd" placeholder="输入新密码6位数字" maxlength="6">
             </label>
             <label class="input-item no-btborder">
-                <span class="mark">重复密码</span>
-                <input type="password" class="flex pub-input" name="reTransactionPwd" placeholder="再次确认交易密码" maxlength="6">
+                <span class="mark">确认密码</span>
+                <input type="password" class="flex pub-input" name="reTransactionPwd" placeholder="输入确认密码6位数字" maxlength="6">
             </label>            
             <div class="pad-10 mt-10">
                 <button class="pub-btn pub-btn-l pub-btn-stacked j-back-transaction-pwd">确认</button>
+            </div>
+            <div class="acc-retrieve-password mt-10">
+                <a href="javascript:void(0)">找回交易密码？</a>
             </div>
         </div>
     </div>
@@ -69,8 +76,16 @@
 <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/zepto.min.js"></script>
 <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/sea.js"></script>
 <script type="text/javascript" src="../../../assets/js/common/common.js"></script>
+<script type="text/javascript" src="//resources.soqi.cn/201808082200/mp/js/language/language.js?v=1533894291"></script>
 <script>
     seajs.use("acc/traderpw/traderpw_modify");
+    
+    execI18n(['common','acc_home'],['common','acc_home'],function(localize){
+                localize('body,title');
+                localize('#userName',{'name' : ''});
+                localize('#idCard',{'idCard' : ''});
+            });
+        
 </script>
 </body>
 </html>

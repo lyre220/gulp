@@ -3,23 +3,23 @@
 .acc-traderpw .no-btborder{border-bottom:none;}
 .acc-traderpw .mark{display:inline-block;width:70px;}
 .acc-traderpw .tips{padding:10px;}
-.acc-traderpw .tips h2{font-size:1.3rem;}
-.acc-traderpw .tips h2 i{ font-size: 2rem;color: #ffa507;}
-.acc-traderpw .tips p{font-size:1.2rem;padding-left:20px;line-height:150%;color:#999;margin-top:5px;}
+.acc-traderpw .tips h2{font-size:13px;}
+.acc-traderpw .tips h2 i{ font-size:20px;color: #ffa507;}
+.acc-traderpw .tips p{font-size:12px;line-height:150%;color:#999;margin-top:5px;}
 
 /*修改交易密码*/
 .acc-traderpw-modify .no-btborder{border-bottom:none;}
 .acc-traderpw-modify .mark{display:inline-block;width:70px;}
-.forgotPassword {float: right;color: #00aaee;font-size: 1.2rem;padding-right: 10px; }
+.forgotPassword {float: right;color: #00aaee;font-size: 12px;padding-right: 10px; }
 
 /*设置交易密码成功*/
 .mt-50{margin-top:50px;;}
 .mt-100{margin-top:100px;}
 .acc-traderpw-success{width:100%;padding:0 20px;text-align:center;}
-.acc-traderpw-success .ic-success {color: #23c768;font-size: 5rem;}
-.acc-traderpw-success .ic-closed{color: #de3939;font-size: 5rem;}
+.acc-traderpw-success .ic-success {color: #23c768;font-size:50px;}
+.acc-traderpw-success .ic-closed{color: #de3939;font-size:50px;}
 .ic-success:after {content: '\e646';}
-.acc-traderpw-success .text{font-size:1.4rem;color:#999;}
+.acc-traderpw-success .text{font-size:14px;color:#999;}
 
 
 /*2016-11-23 新增港澳台地区*/
@@ -29,15 +29,20 @@
 }
 .pop-areabox.active{-webkit-transform:translateY(0);transform:translateY(0);}
 .pop-areabox ul{padding:10px 0 20px;}
-.pop-areabox ul li{ height:50px;line-height:50px;padding:0 10px;font-size:1.4rem;color:#424242;}
+.pop-areabox ul li{ height:50px;line-height:50px;padding:0 10px;font-size:14px;color:#424242;}
 
 /*2018-3-1 手机验证码校验*/
 .acc-traderpw-tell{ padding:15px 10px;background-color:#fff;}
 .acc-traderpw-tell .pub-list,.acc-traderpw-tell .input-item{ padding:0;border-bottom:none;min-height:26px;}
 .acc-traderpw-tell .pub-list .tellIcon{display: inline-block;width: 18px;height: 30px;background: url(http://help.soqi.cn/forgetPsw.png) center no-repeat;background-size: 100% auto;background-position: 0px -17px;}
-.acc-traderpw-tell .pub-list .flex{ font-size:1.5rem;color:#525252; }
+.acc-traderpw-tell .pub-list .flex{ font-size:15px;color:#525252; }
 .acc-traderpw-tell .pub-list .flex em{ color:#1f8ff3;}
 .acc-traderpw-tell .input-item .pub-btn{ height:30px;line-height:28px;}
-.acc-traderpw-tell-tips{ display:none;margin-top:15px;height:30px;line-height:30px;text-align:center;background-color:#fff9df;font-size:1.5rem;color:#999;}
+.acc-traderpw-tell-tips{ display:none;margin-top:15px;height:30px;line-height:30px;text-align:center;background-color:#fff9df;font-size:15px;color:#999;}
 .acc-traderpw-tell-tips em{ color:#1f8ff3;}
 
+/* 找回密码按钮 */
+.acc-retrieve-password{
+    text-align: right;
+    color: #1f8ff3;
+}

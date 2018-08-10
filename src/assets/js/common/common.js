@@ -5,6 +5,8 @@ var webRoot='/src';
 var apiWebRoot ='//wdy.soqitest.com';
 var mp_bak = "//mp.soqi.cn";
 
+var apiTraderpw ="http://mp.soqitest.com";
+var apiCardRules ="https://mp.soqi.cn";
 /**
  * debug调试
  */

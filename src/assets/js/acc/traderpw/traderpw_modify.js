@@ -76,71 +76,8 @@ define(function(require, exports, module) {
          */
         console.log('initData');
          initMethod.GetPhoneStata();
-         /**
-          * 展开选择地区弹出框
-          */
-         $('[data-action="shopPopArea"]').on('click',PopArea.showPopArea);
-
-        /**
-         *  关闭选择地区弹出框
-         */
-        $('.viewbox').on(end,'#pop-areaboxMask',PopArea.hidePopArea);
 
     }
-
-
-        //交易密码找回--地区选择
-        var PopArea ={
-
-            showPopArea:function(){
-                //获取证件
-                console.log('showPopArea');
-                var url = apiCardRules + '/acc/getCardRules.xhtml';
-                var uls = "";
-                console.log(url);
-                ajax.post(url,{},function(data){
-                    if(data.resultSet != null){
-                        for(var i = 0;i< data.resultSet.length;i++){
-                            uls += '<li data-flag="china"><em>' + i18next.t(data.resultSet[i].desc) + '</em></li>';
-                        }
-                    }
-                    var html=''
-                        +'<div claSs="pop-coverbg active" id="pop-areaboxMask"></div>'
-                        + '<div class="pop-areabox" id="pop-areabox">'
-                        +   '<ul>'
-                        +       uls
-                        +   '</ul>'
-                        +'</div>';
-    
-                    if( $('#pop-areaboxMask').length==0){
-                        $('.viewbox').append(html);
-    
-                        setTimeout(function(){
-                            $('.pop-areabox').addClass('anims active');
-                        },30)
-                    }
-                });
-            },
-    
-            hidePopArea:function(){
-                $('#pop-areaboxMask,#pop-areabox').remove();
-                return false;
-            },
-    
-            choosePopArea:function(obj,showbox){
-                var areaName = obj.find('em').html();
-                $(showbox).html(areaName);
-                PopArea.hidePopArea();
-    
-                $('#idCard').attr('data-flag',obj.attr('data-flag'));
-            }
-        };
-    
-
-
-
-
-
 
     /**
      * 初始化事件

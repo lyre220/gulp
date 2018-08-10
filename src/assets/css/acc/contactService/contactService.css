@@ -6,9 +6,9 @@
 /*客服服务时间*/
 
 .service-time {
-    height: 35px;
-    line-height: 35px;
-    font-size: 1.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.0714rem;
     color: #FFAB1C;
     text-align: center;
 }
@@ -19,14 +19,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 50px;
-    padding: 0 10px;
+    height: 3.5714rem;
+    padding: 0 0.7143rem;
     background-color: #fff;
 }
 
 .contact-way span {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.0714rem;
 }
 
 .contact-way span:nth-of-type(1) {
@@ -35,19 +35,19 @@
 
 .contact-way span:nth-of-type(2) {
     color: #AAAAAA;
-    padding-left: 10px;
+    padding-left: 0.7143rem;
 }
 
 .contact-way button {
-    padding: 8px 15px;
+    padding: 0.5714rem 1.0714rem;
     color: #1F8FF3;
-    border: 1px solid #1F8FF3;
-    border-radius: 5px;
+    border: 0.0714rem solid #1F8FF3;
+    border-radius: 0.3571rem;
     background-color: #fff;
 }
 
 .border-b {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 0.0714rem solid #E5E5E5;
 }
 
 /* 客服二维码遮罩弹出层 */
@@ -56,31 +56,31 @@
     /* display: block; */
 }
 .service-wechat{
-    width: 80%;
-    margin: 120px auto;
+    width: 18.2143rem;
+    margin: 8.5714rem auto;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 0.7143rem;
     overflow: hidden;
     text-align: center;
 }
 .service-wechat img{
-    width: 158px;
-    height: 158px;
+    width: 11.2857rem;
+    height: 11.2857rem;
     max-width: 100%;
-    max-height: 158px;
-    margin:30px 0 10px;
+    max-height: 11.2857rem;
+    margin:2.1429rem 0 0.7143rem;
 }
 .service-wechat p{
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #030303;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #E9E9E9;
+    padding-bottom: 1.7857rem;
+    border-bottom: 0.0714rem solid #E9E9E9;
 }
 .close{
-    height: 45px;
-    line-height: 45px;
+    height: 3.2143rem;
+    line-height: 3.2143rem;
 }
 .ic-close{
-    font-size: 20px;
+    font-size: 1.4286rem;
     color:#999999;
 }
