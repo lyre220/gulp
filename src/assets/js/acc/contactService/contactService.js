@@ -35,6 +35,7 @@ define(function(require, exports, module) {
         })
         $('.close').on('click',function(){
             $('.pop-coverbg').hide()
+            
         })
     }
 
