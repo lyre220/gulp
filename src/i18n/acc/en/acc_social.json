@@ -1,0 +1,26 @@
+{
+	"title" : "WeChat&Custom",
+	"showHowGetCode":"See how to get a QR Code",
+	"wechat":"WeChat",
+	"inputWechat":"Please enter your WeChat number",
+	"uploadWQRC":"Upload WeChat QR Code",
+	"upload":"Upload",
+	"anewUpload":"ReUpload",
+	"customName":"Custom name",
+	"customContent":"Custom content",
+	"fillCustomName":"Please enter the custom name",
+	"fillCustomContent":"Please enter the custom content",
+	"uploadQRC":"Upload QR Code",
+	"addCustom":"Add custom",
+	"deleteBtn":"Delete",
+	"saveBtn":"Save",
+
+	"submitParamError" : "Submit data error,please try again",
+	"unknownException" : "Unknown exception",
+	"deleteFail" : "Delete failed",
+	"deleteSuccess" : "Deleted successfully",
+	"saveSuccess" : "Saved successfully",
+	"confirmDeletePic" : "Confirm to delete this QR Code?",
+	"confirmDeleteCustom" : "Confirm to delete this custom content?",
+	"customLimit" : "Please enter a custom name and custom name that cannot exceed 30 characters"
+}

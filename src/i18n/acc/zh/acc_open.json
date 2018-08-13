@@ -1,0 +1,11 @@
+{
+	"title" : "开通成功",
+	"openSuccess":"恭喜您开通成功！",
+	"noticeAfterOpen":"【注意】需登录手机官网完善资料才可继续使用",
+	"companyName":"公司名称:",
+	"account":"帐号:",
+	"defaultPwd":"系统默认密码:",
+	"loginWebsite":"登录网址:",
+	"improveInfomation":"去完善资料"
+
+}

@@ -1,0 +1,203 @@
+{
+  "header" : {
+		"back" : "Back",
+		"manageCenter" : "Home",
+		"msg" : "Message",
+		"logout" : "Logout",
+		"myCard":"My Card"
+	},  
+	
+  "pub-header":{
+    "back":"Back",
+    "more":"More",
+    "myCard":"My Card",
+    "mySoqi":"My Soqi",
+    "messages":"Message",
+    "manageIndex":"Home",
+    "logout":"Logout",
+    "searchTip" : "Please enter name or company or product to search",
+    "search":"Search"
+  },
+  "tips":{
+    "reminder":"Reminder",
+     "codeLoading":"QR Code is loading..."
+  },
+  "pub":{
+    "delete":"Delete",
+    "save":"Save",
+    "finish":"Finish",
+    "region":"Region",
+    "confirm":"Confirm",
+    "superVcard":"Super V Card",
+    "mobile":"Phone",
+    "name":"Name",
+    "account":"Account",
+    "psw":"Password"
+  },
+  "input":{
+    "fillPhone":"Please enter your phone number",
+    "fillVC":"Please enter the verify code"
+  },
+  "pub-footer":{
+    "circle":"Circle",
+    "my":"Me",
+    "manageIndex":"Management Center",
+    "microPage":"Micro Page",
+    "mailList":"Contacts",
+    "article":"Article Center"
+  },
+  "column":{
+    "OKI":"One Key Import",
+    "screensaver":"Screensaver",
+    "mobileOfficailWebsite":"Mobile Website",
+    "vShop":"V Shop",
+    "microLink":"Micro Link",
+    "microPage":"Micro Page",
+    "mapNavi":"Map Navigation",
+    "vipActive":"VIP Activity",
+    "cashier":"Cashier"
+  },
+  "checkcode":{
+    "getVC" : "Get",
+    "correct":"Correct"
+  },
+  "choose-adress":{
+    "paramError":"Parameter error",
+    "chooseCity":"Select city",
+    "chooseProvince":"Select province",
+    "chooseCounty":"Select county",
+    "sorry":"Load failed,error code is"
+  },
+  "wxShare":{
+    "shareTitle":"Sharing title",
+    "shareDesc":"Sharing description",
+    "shareLink":"Sharing link",
+    "shareImgUrl":"Sharing picture",
+    "shareType":"Sharing type",
+    "shareDataUrl":"Sharing data links",
+    "shareSuccess":"Shared successfully",
+    "cancleShare":"Share canceled"
+  },
+  "popUp":{
+     "defaultToast":"Default Notification",
+     "comfirm":"Confirm",
+     "cancle":"Cancel",
+     "iSee":"Got it",
+     "content":"Content",
+     "serveBusy" : "System is busy,please try again later",
+     "loginTimeOut":"Login timeout, please log in again",
+     "illegalVisit":"Illegal visit",
+     "paramError":"The parameter is wrong",
+      "atypism":"({{paramA}} is not match with {{paramB}})",
+      "dealing" : "Is being processed, please wait patiently",
+     "submitDataError" : "Submit data error,please refresh and try again",
+     "dataError":"Data error",
+     "uploadFail" : "Upload failed",
+     "uploadSuccess":"Uploaded successfully"
+   },
+  "library":{
+     "library":"Icon Library",
+     "finish":"Finish",
+     "proposalStyle":"we recommend to choose the uniform style icons"
+  },
+  "dragsort":{
+      "lastOne":"At least one should be left",
+      "addToHome":"It has been added to the home page",
+      "exchageError":"Exchange failed",
+      "adjustColumn":"Do you want to edit the columns? Click 'More' to edit!",
+      "toEdit":"Go to edit"
+   },
+  "dropload":{
+      "loading":"Loading...",
+      "alreadyInTheEnd":"No more data to show!",
+      "noData":"There is no more data!"
+   },
+  "imgUpload":{
+     "chooseImg":"Please choose the picture first!",
+    "limitImgType":"File only allowed to update jpeg/gif/png/bmp format"
+  },
+  "export2EmailBox":{
+    "fillMail":"Please enter the mailbox address",
+    "defineMailFun":"A function that needs to be defined to submit mailbox information",
+    "export2Mailbox":"Export to mailbox",
+    "fillEmail":"Please enter the mailbox address",
+    "export":"Export"
+  },
+  "system-payment":{
+     "toSetTradePassword":"You have not set trade password,set it now?",
+     "locked":"Your trade password has been locked,please reset first",
+     "canInput":"You can also enter ({{num}}) times",
+     "forgotPwd":"Forgot password?",
+     "fillPaymentPwd":"Please enter trade password",
+     "clear":"Clear",
+     "noYetSetPwd":"You have not set trade password",
+     "setPwd":"Set password",
+     "accountLocked":"Excessive number of errors in trade password, your capital account is locked.",
+     "paymentPwdError":"Trade password error,You can also enter {{num}} times",
+     "noFind":"Not found",
+     "weChatPay":"WeChat pay",
+     "alipay":"Alipay",
+     "choosePayType":"Choose method to pay",
+     "accountBalance":"Account balance",
+     "pleaseToWechatPay":"Please complete the payment in WeChat"
+  },
+  "region-select":{
+     "chooseRegion":"Select the region (county)",
+     "loadFail":"Load failed,error code is："
+  },
+  "qiNiuUpload":{
+     "uploading":"Uploading……",
+     "uploadFail":"Upload failed……",
+     "cancelUpload":"Upload canceled……"
+  },
+  "position-util":{
+     "notSupport":"Your current browser version does not support the positioning function",
+     "cannotLocate":"The latitude and longitude of your current position can not be obtained",
+     "timeout":"Connection timeout, please try again",
+     "refuse":"You refused to use location share service, query cancelled.",
+     "openFunction":"You can open this function in browser settings",
+     "locateException":"Sorry,system can't provider location service for you",
+     "locating":"Being positioned...",
+     "soqiMap":"Soqi map navigation",
+     "locateFail":"Position failed...",
+     "noMatchPosition":"I'm sorry I couldn't find the match position"
+  },
+  "pop-concealTips":{
+     "sorry":"Sorry,this info is set to hide",
+     "notFriend":"You are not a friend of the other",
+     "exchangeFirst":"Please <em>Exchange card</em> first",
+     "afterExchange":"This data is visible after the exchange is successful",
+     "toExchange":"Go to exchange",
+     "exchanging":"You are applying to exchange cards with each other",
+     "wait":"Please wait for the other side to agree"
+  },
+  "pop-endVip":{
+     "vipExpirationReminding":"VIP expiration reminding",
+     "sorry":"Sorry, your VIP has expired, and some functions will be limited. In order not to affect your normal use, please renew it first.",
+     "renewVIP":"Renew VIP",
+     "vipExpiration":"VIP expires",
+     "sorry2TellU":"I'm sorry to tell you that user VIP is expired, so some content is restricted!",
+     "vipEndTime" : "VIP expiration time:{{endTime}}",
+     "vipRenew" : "I want to renew 360 yuan/year"
+  },
+  "param-util":{
+    "emailFormatError":"Incorrect mailbox format",
+    "phoneNumberError":"Incorrect phone number format",
+    "digitalFormatError":"Incorrect digit format"
+  },
+  "pictureCut":{
+    "clockwise":"CW",
+    "counterclockwise":"CCW",
+    "crop":"Crop",
+    "zoomOut":"Zoom Out",
+    "zoomIn":"Zoom In",
+    "pictureClarity":"Quality of picture",
+    "normal":"Normal",
+    "hd":"HD",
+    "cancel":"Cancel",
+    "confirm":"Confirm",
+    "cropping":"Cropping...",
+    "uploading":"Uploading...",
+    "notSupport":"Your browser does not support this feature"
+  }
+}

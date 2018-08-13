@@ -1,0 +1,317 @@
+{
+	"common" : {
+		"phoneWebsite":"手机官网",
+		"openVipPrivilege":"开通VIP特权",
+		"enterprisePrivilege":"企业版特权",
+		"openVIP":"开通VIP",
+		"renewVIP":"续费VIP",
+		"vipPrivilege":"VIP特权",
+		"openEnterprise":"开通企业版",
+
+		"submitDataError":"提交数据异常",
+		"illegalOp":"非法操作",
+		"systemError":"系统异常",
+		"modifySuccess":"修改成功"
+	},
+	
+
+	"home" : {
+		"title" : "管理中心",
+		"searchTip" : "请输入姓名、公司、产品   搜索",
+		"manageCenter" : "管理中心",
+		"bindTip" : "代理商【{{realName}}】的经销商/员工【{{employeeName}}】申请绑定您的名片作为他的传播名片，如果点击同意，那么所有已经从您名片发展出去的关系客户和未来从您名片发展的客户，都将归入他的CRM进行管理。如果您不确定这次操作，请点击拒绝。一旦同意，将无法取消，请慎重！",
+		"refuse":"拒绝",
+		"agree":"同意",
+		"learnMore":"了解更多",
+		"iSee":"我知道了",
+		"superVip":"超级会员",
+		"tempVip":"临时VIP",
+		"tempVipTime" : "<em class=\"day\">{{day}}天</em><em class=\"hours\">{{hours}}</em><b>:</b><em class=\"minutes\">{{minutes}}</em><b>:</b><em class=\"seconds\">{{seconds}}</em>",
+		"more":"更多",
+		"openEnterprisePrivilege":"开通企业版特权",
+		"adDynamicSet":"广告动态设置",
+		"adDynamicSetDesc":"根据你的个人喜好，自由管理广告动态",
+		"noMore2Show":"已显示全部内容",
+
+		"ignoreSuccess" : "忽略成功",
+		"setSuccess" : "设置成功",
+		"dataNotExist" : "数据不存在",
+		"notRecievDynamic" : "不再接收此动态",
+		"recoveryDynamic" : "恢复动态,可去\" 我的->动态管理\" 中开启",
+		"toSet" : "去设置",
+		"iGotIt" : "我知道了",
+		"sureRefuse" : "确定拒绝绑定名片",
+		"bindSuccess" : "绑定成功",
+		"noBindApply" : "您暂时没有绑定申请，或您已经处理过",
+		"loginTimeOut" : "登陆超时，请重新登陆",
+		"serviceGetError" : "服务获取失败，请稍后再试",
+		"relationError" : "代理关系获取异常，请稍后再试",
+		"notEqual" : "您与要绑定的CRM不属于同一个代理关系链下,无法进行绑定操作",
+		"notAdmin" : "您不是管理员,不能操作",
+		"websiteUpdated" : "手机官网已升级",
+		"accountCheckError" : "帐号检验异常",
+		"accountDataError" : "帐号数据异常",
+		"wzUpdateFail" : "手机官网升级失败",
+		"wzServiceNotExist" : "企业服务不存在",
+		"notEmptyAccount" : "帐号不能为空",
+		"notEmptyPwd" : "密码不能为空",
+		"wzUpdateVerify" : "手机官网升级验证",
+		"fillWzEmail" : "请输入手机官网登录邮箱",
+		"fillPwd" : "请输入密码",
+		"confirm" : "确认",
+		"verifySuccess" : "验证成功",
+		"confirmUpdate" : "确认升级",
+		"verifyFail" : "验证失败",
+		"reVerify" : "重新验证"
+	},
+
+	"bkmore" : {
+		"title":"栏目管理",
+		"click2MangeColumn":"点击管理栏目",
+		"columAddSortHere":"在这里，你可以对栏目进行增减和排序",
+		"commonColumn":"常用栏目<span>(按住拖动调整排序)</span>",
+		"freeColumn":"免费栏目",
+		"enterpriseVIP":"企业版VIP",
+		"finish":"完成"
+	},
+
+	"edit" : {
+		"title" : "编辑名片",
+		"editHead":"修改头像",
+		"nmp":"姓名、手机、职位",
+		"tbm":"名片主题、背景、音乐"
+	},
+
+	"user" : {
+		"my" : "我的",
+		"modify":"修改",
+		"loginPwd":"登录密码",
+		"setTradePwd":"设置交易密码",
+		"bingWechatNumber":"绑定微信帐号",
+		"hasBindMobile":"已绑定手机号",
+		"safeSettings":"安全设置",
+		"tradePw":"交易密码",
+		"privacySettings":"隐私设置",
+		"dynamicManage":"动态管理",
+		"okc":"一键清理",
+		"multilingual":"多语言",
+		"myCompany":"我的公司",
+		"beingAudited":"审核中",
+		"logout":"退出",
+
+		"scanQRcode" : "扫描二维码,与我交换名片"
+
+	},
+	
+	"language_set" : {
+		"multilingual" : "多语言",
+		"simplifiedChinese" : "简体中文",
+		"english" : "English",
+		"save" : "保存",
+		"setSuccess" : "设置成功",
+		"setFail" : "设置成功"
+		
+	},
+	
+	"modifyPhone" : {
+		"title" : "修改绑定手机号",
+		"currentPhoneNo" : "当前手机号码",
+		"loginPwd":"登录密码",
+		"fillLoginPwd":"请输入登录密码",
+		"region":"地区",
+		"newPhoneNo":"新手机号码",
+		"fillNewPhoneNo":"输入新手机号码",
+		"verifyCode":"验证码",
+		"fillVC":"输入验证码",
+		"getVC":"获取",
+		"confirm":"确认",
+
+		"phoneFormateError" : "手机号码格式不正确",
+		"loginPwdError" : "登录密码不正确",
+		"phoneRegisted" : "电话号码已注册,不能绑定",
+		"voiceVerification" : "请注意接听语音验证码",
+		"vcSended" : "验证码已发送，请注意查收",
+		"vcSendFail" : "验证码发送失败，请刷新重试",
+		"vcWrong" : "验证码不正确",
+		"vcNotExist" : "验证码不存在"
+	},
+
+	"modifyLoginPwd" : {
+		"title" : "修改登录密码",
+		"oldPwd" : "旧密码",
+		"fillOldPwd" : "请输入旧密码",
+		"newPwd" : "新密码",
+		"fillNewPwd" : "请输入新密码",
+		"confirmPwd" : "确认密码",
+		"reConfirmPwd" : "请确认新密码",
+		"confirm" : "确认",
+		"forgetPwd" : "忘记密码?",
+
+		"pwdNotEqual" : "新密码两次输入不一致",
+		"oldPwdWrong" : "旧密码不正确",
+		"modifySuccess" : "修改登录密码成功"
+
+	},
+
+	"modifyTransactionPwd" : {
+		"title" : "交易密码修改",
+		"oldPwd" : "旧密码",
+		"fillOldPwd" : "输入旧密码",
+		"newPwd" : "新密码",
+		"fill6NumberPwd" : "输入新密码6位数字",
+		"confirmPwd" : "确认密码",
+		"fill6NumberConfirmPwd" : "输入确认密码6位数字",
+		"confirm" : "确认",
+		"findPwd" : "找回交易密码?",
+
+		"tradePwdOnly6" : "交易密码只能是6位数字",
+		"noSetTradePwd" : "尚未设置交易密码",
+		"locked" : "您当前已被锁定",
+		"loginPwdError" : "旧交易密码不正确",
+		"notEqual" : "新密码两次输入不一致"
+	},
+
+	"setTransactionPwd" : {
+		"title" : "交易密码设置",
+		"loginPwd" : "登录密码",
+		"fillLoginPwd" : "输入名片登录密码",
+		"fillPersonalInfo" : "请输入个人信息",
+		"name" : "姓名",
+		"fillName" : "请输入真实姓名 {{name}}",
+		"region" : "地区",
+		"mainlandIDCard" : "请输入有效证件",
+		"idCard" : "身份证号",
+		"fillIDCard" : "请输入身份证号 {{idCard}}",
+		"resetPwd" : "请重设交易密码",
+		"tradePwd" : "交易密码",
+		"sixPureNumbers" : "6位纯数字",
+		"confirmPwd" : "重复密码",
+		"reConfirmPwd" : "再次确认交易密码",
+		"meetProblem" : "找回密码遇到问题?",
+		"tip1" : "1.身份证号和真实姓名是您设置交易密码时所填写",
+		"tip2" : "2.如遇到其他问题可致电客服:",
+		"confirm" : "确认",
+
+		"tradePwd6PureNumbers" : "交易密码只能输入6位纯数字",
+		"loginPwdWrong" : "登录密码不正确",
+		"idCardWrong" : "身份证号码不正确",
+		"nameWrong" : "姓名不正确",
+		"notEqual" : "交易密码两次不一致",
+		"tradePwdFail" : "交易密码设置失败",
+		"tradePwdSuccess" : "交易密码设置成功",
+		"alreadyExist" : "已存在交易密码",
+		
+		"mainland" : "大陆身份证",
+		"hongkongMacau" : "港澳通行证",
+		"taiwan" : "台湾通行证",
+		"hongkongId" : "香港身份证",
+		"macauId" : "澳门身份证",
+		"americanId" : "美国身份证",
+		"taiwanPass" : "台湾通行证",
+		"singaporeId" : "新加坡身份证号",
+		"canadianPassport" : "加拿大护照"
+
+		
+	},
+
+	"privacySettings" : {
+		"title" : "隐私设置",
+		"allowSearch" : "允许陌生人搜索到我",
+		"allowShowMe" : "允许内部同事查看我的名片",
+		"showInWz" : "是否在手机官网中显示我的名片",
+		"allowStrangerShow" : "允许陌生人查看基础资料",
+		"basicInfo" : "基础资料包含手机、邮箱、微信、QQ、地址",
+		"hidePhone" : "隐藏注册手机号",
+		"sorry" : "抱歉，该企业不允许修改此项设置。",
+		"modifyFail" : "修改隐私状态失败",
+		"modifySuccess" : "修改隐私状态成功"
+	},
+	
+	"dynamicManage" : {
+		"title" : "动态管理",
+		"onState" : "已开启状态",
+		"closeState" : "已关闭状态",
+		"open" : "开启",
+		"close" : "关闭",
+		
+		"dataException" : "提交数据异常",
+		"illegalOperation" : "非法操作",
+		"systemException" : "系统异常",
+		"dataNothingness" : "数据不存在",
+		"notDynamic" : "暂无动态。",
+		"alreadyOpen" : "你已经开启此动态不需要在重复操作了",
+		"setSuccess" : "设置成功"
+	
+	},
+
+	"accClear" : {
+		"title" : "一键清理",
+		"needClean" : "需要清理的内容",
+		"basicInfo" : "基本信息",
+		"microPage" : "微单页",
+		"microLink" : "微链接",
+		"immediatelyClean" : "立即清理",
+		
+		"clearLimit" : "清理限制,您今天操作已达上限",
+		"notUserMicroPage" : "清理单页时,未找到用户的单页",
+		"clearFail" : "清理单页时,部分失败,可重试清理",
+		"NoAuthority" : "您的名片没有权限操作",
+		"clearSucess" : "清理成功",
+		"clearCentre" : "请耐心等待，正在清理中...",		
+		"selectContent" : "请先选择清理内容",
+		"confirmClear" : "确认清理",
+		"clearTip" : "所选内容清理后将不可恢复，确认清理所选内容？"
+	
+	},
+
+	"company" : {
+		"title" : "我的公司",
+		"searchCompany2Join" : "请搜索要加入的公司",
+		"pleaseSearch" : "未加入任何公司，请搜索加入",
+
+		"chooseWay2Delete" : "选择删除方式",
+		"onlyDeleteStaff" : "仅删除员工",
+		"keepCardContent" : "保留员工名片中的所有内容",
+		"deleteStaff1" : "删除员工及镜像内容",
+		"deleteStaff2" : "删除员工并删除员工名片中镜像的公司母名片的内容",
+		"deleteStaff3" : "删除员工及所有微单页和微链接",
+		"deleteStaff4" : "删除员工同时删除员工名片中所有微单页以及微链接(包含自己创建的)",
+		"carefulOp" : "请务必谨慎操作，确认删除后无法恢复！",
+		"confirmDelete" : "确认删除？",
+		"quitNeedConfirm" : "退出本公司需要公司管理员同意",
+		"contactAdmin" : "联系管理员申请退出",
+		"chooseQuitWay" : "选择退出方式",
+		"quitOption1" : "仅退出公司<span class=\"sign\">默认</span>",
+		"quitOption2" : "保留员工名片中的所有内容",
+		"quitOption3" : "退出公司并清理镜像内容",
+		"quitOption4" : "退出公司并清理名片中镜像此公司母名片的内容",
+		"quitOption5" : "退出公司并清理所有微单页和微链接",
+		"quitOption6" : "退出公司并清理名片中所有微单页以及微链接(包含自己创建的)",
+		"confirmQuit" : "确认申请退出公司？",
+
+		"auditWait" : "审核中,请耐心等待",
+		"applyingJoin" : "您正在申请加入",
+		"companyMain" : "公司主营",
+		"addr" : "地址",
+		"quitCompany" : "退出公司",
+		"cancelApply" : "取消申请",
+		"quitSuccess" : "退出成功",
+		"quitFail" : "退出失败",
+		"loginTimeOut" : "登录超时",
+		"notInCompany" : "您没在任何公司内部",
+		"systemError" : "系统出错",
+		"noApplyRecord" : "未找申请记录",
+		"opSuccess" : "操作成功"
+	},
+
+	"follow" : {
+		"followWechat" : "关注微信公众号",
+		"longPress" : "长按识别二维码,",
+		"followSuperVCard" : "关注“<em>超级V名片</em>”微信公众号",
+		"followOfficial" : "关注公众号",
+		"freeReg" : "免费注册",
+		"perfectInformation" : "完善资料"
+	}
+
+
+}

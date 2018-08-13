@@ -1,0 +1,14 @@
+{
+	"privacySettings":"隐私设置",
+	"allowStrangerSearchMe":"允许陌生人搜索到我",
+	"allowWorkmateViewMyCard":"允许内部同事查看我的名片",
+	"ifShowCardInWebsite":"是否在手机官网中显示我的名片",
+	"allowStrangerViewBasicInfo":"允许陌生人查看基础资料",
+	"basicInfoInclude":"基础资料包含手机、邮箱、微信、QQ、地址",
+	"hideRegistMobile":"隐藏注册手机号",
+	
+	"reject":"抱歉，该企业不允许修改此项设置。",
+	"dataException":"抱歉，该企业不允许修改此项设置。",
+	"updateFial":"修改隐私状态失败",
+	"updateSuccess":"修改隐私状态成功"
+}

@@ -1,0 +1,127 @@
+{
+
+	"common" : {
+		"phoneNumber" : "请输入手机号",
+		"errorMobile" : "手机号码不正确",
+		"registedUser" : "您已经是我们的注册用户",
+		"errorSubmitParameter" : "提交参数异常,可刷新重试",
+		"notExistReferee" : "推荐人不存在",
+		"serviceAgreement" : "登录或注册代表您同意超级V名片<a href=\"/page/acc/serviceAgreement.html\">用户服务协议</a>",
+		"checkServiceAgreement" : "请先同意服务协议"
+	},
+	
+	"login" : {
+		"title" : "登录",
+		"slogan" : "[ 方寸之间 · 整合链接一切 ]",
+		"password" : "请输入密码",
+		"captcha" : "请输入验证码",
+		"forgetPassword" : "忘记密码？",
+		"createMP" : "创建名片",
+		"loginbtn" : "登    录",
+		"errorVc" : "验证码错误",
+		"errorPwd" : "账号不存在或者密码不正确",
+		"incorrectPassword" : "账号不存在或者密码不正确",
+		"dataException" : "登录用户数据异常,请联系系统管理员",
+		"mp-logo" : "http://help.soqi.cn/zh/img_mp_logo.png",
+		"languages" : "语言"
+	},
+	
+	"findPassword" : {
+		"findPwd":"找回密码",
+		"login":"登录",
+		"fillVC":"输入验证码",
+		"getVC":"获取验证码",
+		"vCIsNoNull":"验证码不能为空",
+		"vCIsLeng4":"验证码只能4位",
+		"next":"下一步"
+	},
+
+	"setNewPwd" : {
+		"title" : "设置新密码",
+		"login" : "登录",
+		"setNewPwd" : "设置新密码",
+		"newPwd" : "新密码",
+		"confirmPwd" : "确认密码",
+		"saveUpdate" : "保存修改",
+		"notEmptyPwd" : "密码不能为空",
+		"pwdLengthBt6and20" : "密码长度只能在6-20位字符之间",
+		"pwdContainError" : "密码只能包含字母、数字、下划线等字符",
+		"pwdNotEqual" : "密码不一致，请核实"
+		
+	},
+
+	"register" : {
+		"open" : "开通",
+		"login" : "登录",
+		"title" : "注册",
+		"yourReferer" : "您的推荐人",
+		"recommend" : "推荐",
+		"fillRegistInfo" : "填写注册信息",
+		"chineseMainland" : "中国大陆 <em>+ 86</em>",
+		"hk" : "中国香港特别行政区  <em>+ 852</em>",
+		"macao" : "中国澳门特别行政区  <em>+ 853</em>",
+		"taiwan" : "台湾  <em>+ 886</em>",
+		"account" : "账号",
+		"password" : "密码",
+		"fillLoginPwd" : "请设置登录密码",
+		"fillOpenTime" : "请选择开通时间",
+		"oneYearVip" : "1年VIP",
+		"twoYearVip" : "2年VIP",
+		"threeYearVip" : "3年VIP",
+		"openAfterPay" : "支付完成后立即开通",
+		"twoYearGetHalfYear" : "首次开通VIP，2年送半年",
+		"threeYearGetOneYear" : "首次开通VIP，3年送1年+1个ibeacon.",
+		"buyServicePackage" : "购买服务包",
+		"freeRegist" : "免费注册",
+		"totalPay" : "应付总额", 
+		"validUntil" : "有效期至",
+		"confirmPay" : "确认支付",
+		"drag2Verify" : "按住滑块，拖动到最右边验证",
+		"vcSended" : "校验码已发送至",
+		"errorVc" : "验证码错误",
+		"confirmRegist" : "确认注册",
+		"noMoreTip" : "不再提示",
+		
+		"twiceErrorGetCall" : "您已2次获取验证码失败,可获取语音验证码,请认真接听系统来电。",
+		"verifySuccessfully" : "验证成功",
+		"getVC" : "获取验证码",
+		"fillVC" : "请输入验证码",
+		"verifyMobileFirst" : "请先完成手机号码的验证",
+		"setSuccess" : "设置成功",
+		"sendSuccess" : "发送成功",
+		"lackOfRelationship" : "缺少推荐关系,不能注册",
+		"finishInWechat" : "请您在微信中完成支付",
+
+		"existMobile" : "电话号码已注册",
+		"getVcFirst" : "请先获取注册码",
+		"createMpError" : "用户创建失败，请联系系统管理员",
+		"creating" : "正在为您创建……",
+		"userAlreadyExists" : "帐户已存在",
+		"moneyExceptin" : "金额异常"
+	},
+
+	"paySuccess" : {
+		"title" : "注册",
+		"congratulation" : "恭喜您成功加入",
+		"superVCard" : "〝超级V名片〞",
+		"longPress" : "长按识别关注公众号·使用超级V名片",
+		"account" : "帐号:",
+		"password" : "密码:",
+		"paywayAli" : "支付方式:支付宝支付",
+		"paySuccess" : "成功支付首年费用：",
+		"paywayWechat" : "支付方式:微信支付",
+		"payFirstYear" : "成功支付首年费用：",
+		"activeByCode" : "激活码激活",
+		"submitSuccess" : "提交成功!由于注册量，镜像源较大，请耐心等待,稍后刷新！",
+		"intoBackground" : "进入名片后台"
+	},
+
+	"registerSuccess" : {
+		"registSuccess" : "注册成功",
+		"skip" : "跳过...",
+		"passwordLimit" : "修改密码不能为空或长度只能在6-20个字符，支持字母、下划线、数字",
+		"submitParamError" : "提交数据异常,可刷新重试",
+		"modifyFail" : "修改失败",
+		"modifySuccess" : "修改成功"
+	}
+}

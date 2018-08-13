@@ -1,0 +1,206 @@
+{
+  "header" : {
+		"back" : "返回",
+		"manageCenter" : "管理中心",
+		"msg" : "消息",
+		"logout" : "退出",
+		"myCard":"我的名片"
+	},
+
+  "pub-header":{
+    "back":"返回",
+    "more":"更多",
+    "myCard":"我的名片",
+    "mySoqi":"我的搜企",
+    "messages":"消息",
+    "manageIndex":"管理中心",
+    "logout":"退出",
+    "searchTip" : "请输入姓名、公司、产品   搜索",
+    "search":"搜索"
+  },
+  "tips":{
+    "reminder":"温馨提示",
+     "codeLoading":"二维码加载中..."
+  },
+  "pub":{
+    "delete":"删除",
+    "save":"保存",
+    "finish":"完成",
+    "region":"地区",
+    "confirm":"确认",
+    "superVcard":"超级V名片",
+    "mobile":"手机",
+    "name":"姓名",
+    "account":"帐号",
+    "psw":"密码"
+  },
+  "input":{
+    "fillPhone":"请输入你的手机号码",
+    "fillVC":"请输入验证码"
+  },
+  "pub-footer":{
+    "circle":"圈子",
+    "my":"我的",
+    "manageIndex":"管理中心",
+    "microPage":"微单页",
+    "mailList":"通讯录",
+    "article":"文章中心"
+  },
+  "column":{
+    "OKI":"一键导入",
+    "screensaver":"名片屏保",
+    "mobileOfficailWebsite":"手机官网",
+    "vShop":"V店",
+    "microLink":"微链接",
+    "microPage":"微单页",
+    "mapNavi":"地图导航",
+    "vipActive":"VIP活动",
+    "cashier":"收银台"
+  },
+  "checkcode":{
+    "getVC" : "获取验证码",
+    "correct":"正确"
+  },
+  "choose-adress":{
+    "paramError":"参数出错",
+    "chooseCity":"选择所在地区 (城市)",
+    "chooseProvince":"选择所在地区 (省份)",
+    "chooseCounty":"选择所在地区 (县区)",
+    "sorry":"很遗憾地告诉您，加载失败了,状态码"
+  },
+  "wxShare":{
+    "shareTitle":"分享标题",
+    "shareDesc":"分享描述",
+    "shareLink":"分享链接",
+    "shareImgUrl":"分享图片",
+    "shareType":"分享类型",
+    "shareDataUrl":"分享数据链接",
+    "shareSuccess":"我分享成功了哦",
+    "cancleShare":"我取消了分享"
+  },
+  "popUp":{
+     "defaultToast":"默认的Toast通知",
+     "comfirm":"确定",
+     "cancle":"取消",
+     "iSee":"我知道了",
+     "content":"内容",
+     "serveBusy" : "服务器正在开小差，请稍后重试",
+     "loginTimeOut":"登录超时，请您重新登录",
+     "illegalVisit":"非法访问",
+     "paramError":"参数不对哦",
+      "atypism":"({{paramA}}与{{paramB}}不一致)",
+      "dealing" : "正在处理中，请等待",
+     "submitDataError" : "提交数据异常,可刷新重试",
+     "dataError":"数据异常",
+     "uploadFail" : "上传失败",
+     "uploadSuccess":"上传成功"
+   },
+  "library":{
+    "library":"图标库",
+    "finish":"完成",
+    "proposalStyle":"建议选择风格统一图标"
+  },
+  "dragsort":{
+    "lastOne":"最后一个留下我吧",
+    "addToHome":"已经添加到主页上",
+    "exchageError":"交换失败",
+    "adjustColumn":"想调整首页栏目？点“更多”进行编辑吧!",
+    "toEdit":"去编辑"
+  },
+  "dropload":{
+    "loading":"加载中...",
+    "alreadyInTheEnd":"亲，已经到底了哦！",
+    "noData":"亲,已经没有数据哦！"
+  },
+  "imgUpload":{
+    "chooseImg":"请先选择图片!",
+    "limitImgType":"只允许上传 jpeg/gif/png/bmp 格式的文件"
+  },
+  "export2EmailBox":{
+    "fillMail":"请填写邮箱地址",
+    "defineMailFun":"需要定义提交邮箱信息的函数",
+    "export2Mailbox":"导出到邮箱",
+    "fillEmail":"输入邮箱地址",
+    "export":"导出"
+  },
+  "system-payment":{
+    "toSetTradePassword":"未设置交易密码,是否去设置?",
+    "locked":"您的交易密码已锁定,请重置后在支付",
+    "canInput":"您还可以输入({{num}})次",
+    "forgotPwd":"忘记密码?",
+    "fillPaymentPwd":"输入支付密码",
+    "clear":"清空",
+    "noYetSetPwd":"您尚未设置交易密码",
+    "setPwd":"设置密码",
+    "accountLocked":"支付密码错误次数过多，您的资金账户已锁定",
+    "paymentPwdError":"支付密码错误,您还可以输入{{num}}次",
+    "noFind":"找不到",
+    "weChatPay":"微信支付",
+    "alipay":"支付宝",
+    "choosePayType":"选择付款方式",
+    "accountBalance":"账户余额",
+    "pleaseToWechatPay":"请您在微信中支付"
+  },
+  "region-select":{
+    "chooseRegion":"选择所在地区 (县区)'",
+    "loadFail":"很遗憾地告诉您，加载失败了,状态码："
+  },
+  "qiNiuUpload":{
+    "uploading":"上传中……",
+    "uploadFail":"上传失败时……",
+    "cancelUpload":"取消上传时……"
+  },
+  "position-util":{
+    "notSupport":"您当前浏览器版本不支持定位功能",
+    "cannotLocate":"无法获得您当前位置的经纬度",
+    "timeout":"连接超时，请重试 ",
+    "refuse":"您拒绝了使用位置共享服务，查询已取消",
+    "openFunction":"您可以在浏览器设置里打开此功能",
+    "locateException":"亲爱的火星网友，非常抱歉，我们暂时无法为您所在的星球提供位置服务",
+    "locating":"定位中。。。",
+    "soqiMap":"搜企地图导航",
+    "locateFail":"定位失败。。。。",
+    "noMatchPosition":"抱歉没找到符合的位置"
+  },
+  "pop-concealTips":{
+    "sorry":"抱歉，对方对外隐藏了此资料",
+    "notFriend":"你还不是对方好友",
+    "exchangeFirst":"请先<em>交换名片</em>",
+    "afterExchange":"交换成功后此资料可见",
+    "toExchange":"去交换",
+    "exchanging":"你正在申请和对方交换名片",
+    "wait":"请等待对方同意"
+  },
+  "pop-endVip":{
+    "vipExpirationReminding":"VIP到期提醒",
+    "sorry":"很抱歉，您的VIP已经到期，部分功能会受限，为了不影响您的正常使用，请先续费。",
+    "renewVIP":"续费VIP",
+    "vipExpiration":"VIP到期了",
+    "sorry2TellU":"很抱歉的告诉您，用户VIP到期了，因此部分内容受限不能查看！",
+    "vipEndTime" : "VIP到期时间:{{endTime}}",
+    "vipRenew" : "我要续费 360元/年"
+  },
+  "param-util":{
+    "emailFormatError":"邮箱格式不正确",
+    "phoneNumberError":"手机号码格式不正确",
+    "digitalFormatError":"数字格式不正确"
+  },
+  "pictureCut":{
+    "clockwise":"逆时针",
+    "counterclockwise":"顺时针",
+    "crop":"裁剪",
+    "zoomOut":"缩小",
+    "zoomIn":"放大",
+    "pictureClarity":"选择图片清晰度",
+    "normal":"普通",
+    "hd":"高清",
+    "cancel":"取消",
+    "confirm":"确定",
+    "cropping":"裁剪中。。。",
+    "uploading":"上传中。。。",
+    "notSupport":"您的浏览器不支持此功能"
+  },
+  "trusteeship":{
+    "NotTrusteeship":"该功能不支持托管访问"
+  }
+}

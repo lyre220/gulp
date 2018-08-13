@@ -2,11 +2,9 @@
  * API配置
  */
 var webRoot='/src';
-var apiWebRoot ='//wdy.soqitest.com';
+var apiWebRoot ='//mp.soqitest.com';
+// var apiWebRoot ='//wdy.soqitest.com';
 var mp_bak = "//mp.soqi.cn";
-
-var apiTraderpw ="http://mp.soqitest.com";
-var apiCardRules ="https://mp.soqi.cn";
 /**
  * debug调试
  */
@@ -81,14 +79,9 @@ var GetCookie = function(name){
     if (arr != null) return unescape(arr[2]); return null;
 };
 $.ajax = interceptor($.ajax,function (param) {
-    if(!loginFilter()){
-        var reg = new RegExp("(^| )" + 'STOKEN' + "=([^;]*)(;|$)");
-        if (!(document.cookie.match(reg))){
-            location.href = mp_bak + '/login/turnLogin.xhtml?requestURL=' + encodeURIComponent(location.href);
-        }
-    }
     param.beforeSend = function(xhr) {
-        xhr.setRequestHeader("Authorization", GetCookie('STOKEN'));
+        xhr.setRequestHeader("Authorization", 'A92E41606B7729747CB0BCD31B48A3E7');
+        // xhr.withCredentials = true;
     };
 });
 

@@ -1,6 +1,7 @@
 {
-  "acc/traderpw/traderpw.css": "acc/traderpw/traderpw-a3db6f0b98.css",
-  "common/base.css": "common/base-1ba6be0131.css",
-  "common/common.css": "common/common-bd7c356893.css",
+  "acc/contactService/contactService.css": "acc/contactService/contactService-8de6a2cb5c.css",
+  "acc/traderpw/traderpw.css": "acc/traderpw/traderpw-7dae7798df.css",
+  "common/base.css": "common/base-f4a4cd7c59.css",
+  "common/common.css": "common/common-ecaaf4c632.css",
   "common/icPubfont.css": "common/icPubfont-98734ad292.css"
 }

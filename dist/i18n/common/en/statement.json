@@ -1,0 +1,17 @@
+{
+   "statement":"Statement",
+   "back":"Back",
+   "disclaimer":"Disclaimer of Super V Card",
+   "protectPrivacy":"The principle of protecting privacy",
+   "protectData":"Super V card (hereinafter referred to as 'this station') will be strict management and protection of the information provided by the user, the station will use the corresponding technology to prevent your personal data loss, theft or tampering. But please note that there are no 'perfect safety measures' on the Internet, so we do not promise that the above information is absolutely safe. We will not provide, sell, rent, share and trade user's personal information to any third party. When we are forced by the law or provide your information in accordance with the requirements of the government, for example, the request of the government agency, the court investigation order and so on, we will disclose your information in good faith.",
+   "clause":"Disclaimer",
+   "subSituation":"Under the following circumstances, this station will not be held responsible for your privacy leakage.",
+   "youAgreeShare":"You agree to let the third party share your data;",
+   "youAgreePublish":"You agree to disclose your personal data and enjoy the products and services you provide.",
+   "courtSummons":"This station needs to obey court summons, legal orders or legal procedures.",
+   "hack":"The account or password is illegally used by others because of hacking or negligence of user's custody.",
+   "modify":"Modify your info",
+   "update":"You can always update or update your personal information and password after you have successfully logged in this website.",
+   "contact":"Contact us",
+   "contactUs":"If you have any comments and suggestions on this privacy statement, privacy protection measures and have any suggestion or opinion when you are using, please contact us in time."
+}

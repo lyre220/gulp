@@ -1,0 +1,127 @@
+{
+
+	"common" : {
+		"phoneNumber" : "Please enter your phone number",
+		"errorMobile" : "Phone number is incorrect",
+		"registedUser" : "You have registered already",
+		"errorSubmitParameter" : "Submit parameter error,please refresh and try again",
+		"notExistReferee" : "The referrer does not exist",
+		"serviceAgreement" : "When you log in or register,you agree to Super V Card's <a href=\"/page/acc/serviceAgreement.html\">User service protocol</a>",
+		"checkServiceAgreement" : "Please agree to the User service protocol first"
+	},
+
+	"login" : {
+		"title" : "Login",
+		"slogan" : "[ Small business card . Big integration ability ]",
+		"password" : "Please enter your password",
+		"captcha" : "Please enter the verify code",
+		"forgetPassword" : "Forgot password?",
+		"createMP" : "Create card",
+		"loginbtn" : "Login",
+		"errorVc" : "Verify code error",
+		"errorPwd" : "Account does not exist or the password is incorrect",
+		"incorrectPassword" : "Account does not exist or the password is incorrect",
+		"dataException" : "User data error,please contact system administrator",
+		"mp-logo" : "http://help.soqi.cn/en/img_mp_logo.png",
+		"languages" : "Language"
+	},
+	
+	"findPassword" : {
+		"findPwd":"Retrieve password",
+		"login":"Login",
+		"fillVC":"Please enter the verify code",
+		"getVC":"Get",
+		"vCIsNoNull":"Verify code can not be empty",
+		"vCIsLeng4":"Verify code can only be 4 characters",
+		"next":"Next"
+	},
+
+	"setNewPwd" : {
+		"title" : "Set new password",
+		"login" : "Login",
+		"setNewPwd" : "Set new password",
+		"newPwd" : "New password",
+		"confirmPwd" : "Confirm the password",
+		"saveUpdate" : "Save and modify",
+		"notEmptyPwd" : "Password can not be empty",
+		"pwdLengthBt6and20" : "The length of password can only be between 6-20 characters",
+		"pwdContainError" : "Passwords can only contain characters such as letters, numbers, underscores",
+		"pwdNotEqual" : "Password is not consistent, please check"
+
+	},
+
+	"register" : {
+		"open" : "Open",
+		"login" : "Login",
+		"title" : "Register",
+		"yourReferer" : "Your referrer",
+		"recommend" : "Recommend",
+		"fillRegistInfo" : "Enter the registration info",
+		"chineseMainland" : "Chinese Mainland <em>+ 86</em>",
+		"hk" : "HongKong China <em>+ 852</em>",
+		"macao" : "Macau China<em>+ 853</em>",
+		"taiwan" : "TaiWan China<em>+ 886</em>",
+		"account" : "Account",
+		"password" : "Password",
+		"fillLoginPwd" : "Please enter login password",
+		"fillOpenTime" : "Select purchase time",
+		"oneYearVip" : "1 year",
+		"twoYearVip" : "2 years",
+		"threeYearVip" : "3 years",
+		"openAfterPay" : "Create account immediately after payment finished",
+		"twoYearGetHalfYear" : "Purchase two years VIP first time,get half a year free",
+		"threeYearGetOneYear" : "Purchase three years VIP first time,get a year and iBeacon free",
+		"buyServicePackage" : "Purchase service package",
+		"freeRegist" : "Free registration",
+		"totalPay" : "Total",
+		"validUntil" : "Valid until",
+		"confirmPay" : "Confirm purchase",
+		"drag2Verify" : "Drag the slider to right to verify",
+		"vcSended" : "The verify code has been sent to",
+		"errorVc" : "Verify code error",
+		"confirmRegist" : "Register",
+		"noMoreTip" : "No longer prompt",
+		
+		"twiceErrorGetCall" : "You have failed to get the verify code 2 times, you can get the voice verify code. Please answer the system call carefully.",
+		"verifySuccessfully" : "Verified successfully",
+		"getVC" : "Get",
+		"fillVC" : "Please enter the verify code",
+		"verifyMobileFirst" : "Please verify your phone number first.",
+		"setSuccess" : "Set successfully",
+		"sendSuccess" : "Send successfully",
+		"lackOfRelationship" : "Unable to register for lack of referrals",
+		"finishInWechat" : "Please complete the payment in WeChat",
+
+		"existMobile" : "Phone number has been registered",
+		"getVcFirst" : "Please get the registration code first",
+		"createMpError" : "User create failed, please contact the system administrator",
+		"creating" : "Creating…",
+		"userAlreadyExists" : "Account already exists",
+		"moneyExceptin" : "Abnormal capital"
+	},
+
+	"paySuccess" : {
+		"title" : "Register",
+		"congratulation" : "Congratulations on your success to join",
+		"superVCard" : "〝Super V Card〞",
+		"longPress" : "Long press to follow Official Account and use super V card",
+		"account" : "Account:",
+		"password" : "Password:",
+		"paywayAli" : "PayWay:AliPay",
+		"paySuccess" : "First year cost：",
+		"paywayWechat" : "PayWay:WeChat Pay",
+		"payFirstYear" : "First year cost：",
+		"activeByCode" : "Activate by code",
+		"submitSuccess" : "Submit successfully! Due to the large amount of registration and the large copy operation, please wait patiently and refresh later.",
+		"intoBackground" : "Enter the card backstage"
+	},
+
+	"registerSuccess" : {
+		"registSuccess" : "Login successfully",
+		"skip" : "Skip...",
+		"passwordLimit" : "The password can not be empty or only 6-20 characters in length. It supports letters, underlines, and digits.",
+		"submitParamError" : "Submission of data exception, refresh and retry again",
+		"modifyFail" : "Failure to modify",
+		"modifySuccess" : "Modified successfully"
+	}
+}

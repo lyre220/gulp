@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>设置交易密码</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no" /><!---忽略将数字变为电话号码-->
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- apple应用模式 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="browsermode" content="application" /><!-- UC应用模式 -->
+    <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <link rel="stylesheet" type="text/css" data-href="@/css/common/base-f4a4cd7c59.css">
+    <link rel="stylesheet" type="text/css" data-href="@/css/common/common-ecaaf4c632.css">
+    <link rel="stylesheet" type="text/css" data-href="@/css/common/icPubfont-98734ad292.css">
+    <link rel="stylesheet" type="text/css" data-href="@/css/acc/traderpw/traderpw-7dae7798df.css">
+    <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/include.js"></script>
+</head>
+<body>
+<div class="viewbox">
+    <include src="../../common/header.html"></include>
+    <div class="wrapbox">
+        <!--交易失败-->
+       <!-- <div class="acc-traderpw-set-success">
+            <i class="ic-pubfont ic-closed"></i>
+            <p class="text mt-30">交易密码设置失败！</p>
+            <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked pub-btn-disable mt-50">返回" 我的钱包 "</a>
+        </div> -->
+        <!--交易失败end-->
+
+        <!--交易成功-->
+        <div class="acc-traderpw-success mt-100">
+            <i class="ic-pubfont ic-success"></i>
+            <p class="text mt-30">交易密码设置成功,请牢记！</p>
+            <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked mt-50">返回" 我的钱包 "</a>
+        </div>
+        <!--交易成功 end-->
+    </div>
+</div>
+<script type="text/html" id="traderpwStatus">
+    {{if !setStatus}}
+    <div class="acc-traderpw-set-success">
+        <i class="ic-pubfont ic-closed"></i>
+        <p class="text mt-30">交易密码设置失败！</p>
+        <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked pub-btn-disable mt-50">返回" 我的钱包 "</a>
+    </div>
+    {{else}}
+    <div class="acc-traderpw-set-success">
+        <i class="ic-pubfont ic-success"></i>
+        <p class="text mt-30">交易密码设置成功,请牢记！</p>
+        <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked mt-50">返回" 我的钱包 "</a>
+    </div>
+    {{/if}}
+</script>
+<script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/zepto.min.js"></script>
+<script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/sea.js"></script>
+<script type="text/javascript" src="../../../assets/js/common/common-4261167a5c.js"></script>
+<script>
+    seajs.use("acc/traderpw/traderpw_set");
+</script>
+</body>
+</html>

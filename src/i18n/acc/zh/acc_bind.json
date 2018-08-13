@@ -1,0 +1,39 @@
+{
+
+
+	"wxBind" : {
+		"title" : "绑定信息",
+		"unbind" : "解绑",
+		"unbindSuccess" : "解绑成功",
+		"unbindFail" : "解绑失败",
+		"superCard" : "超级V名片"
+	},
+
+	"wechatNum" : {
+		"title" : "绑定微信公众号",
+		"bindMessage":"绑定信息",
+		"unbind":"解绑",
+		"bindWOA":"绑定微信公众号",
+		"whyBindWOA":"为什么要绑定微信公众号",
+		"easyUseCard":"方便使用名片",
+		"recieveMessageIntime":"及时接收信息",
+		"yourCompanyHasWOA1":"您当前加入公司",
+		"yourCompanyHasWOA2":"已经自定义对接公众号,可长按识别二维码去绑定公众号",
+		"wechatNumber":"微信号",
+		"superCardWOA":"“超级V名片”的公众号",
+		"superCard":"“超级V名片",
+		"bind":"绑定",
+		"click2Bind":"点击<em>绑定</em>按钮，绑定公众号",
+		"hasBind":"已绑定公众号",
+		"noMore":"没有更多了",
+
+		"paramError" : "参数异常，可刷新后重试",
+		"fillCardInfoReg" : "请输入名片信息验证",
+		"fillPhone" : "请输入手机号",
+		"fillPwd" : "请输入密码",
+		"confirmBind" : "确认绑定",
+		"bindSuccess" : "您已成功绑定“{{name}}”公众号'",
+		"unbindWechat" : "确定要解绑该微信公众号吗？"
+	}
+
+}

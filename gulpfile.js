@@ -51,6 +51,12 @@ gulp.task('rev', function() {
         .pipe(gulp.dest(app.prdPath +'/pages'));//- 替换后的文件输出的目录
 });
 
+
+gulp.task('i18n',function() {//- 创建一个名为 concat 的 task
+    gulp.src([app.srcPath +'/i18n/*/*.json'])                
+   .pipe(gulp.dest( app.prdPath +'/i18n'));
+});
+
 /*
 gulp.task('watch', function() {
     console.log('开始监听文件的变动');
@@ -59,4 +65,4 @@ gulp.task('watch', function() {
 });
 */
 
-gulp.task('default', ['css','js','rev']);
+gulp.task('default', ['css','js','rev','i18n']);

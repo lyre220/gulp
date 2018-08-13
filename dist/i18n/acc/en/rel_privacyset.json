@@ -1,0 +1,14 @@
+{
+	"privacySettings":"Privacy settings",
+	"allowStrangerSearchMe":"Allow strangers to search me",
+	"allowWorkmateViewMyCard":"Allow workmate to view my card",
+	"ifShowCardInWebsite":"Whether to display my card in the mobile website",
+	"allowStrangerViewBasicInfo":"Allow strangers to view my basic info",
+	"basicInfoInclude":"Includes phones number, e-mail, WeChat, QQ, address.",
+	"hideRegistMobile":"Hide my phone number",
+	
+	"reject":"Sorry, the company is not allowed to modify this setting",
+	"dataException":"Sorry, the company is not allowed to modify this setting.",
+	"updateFial":"Modify the privacy status failed",
+	"updateSuccess":"Modified privacy successfully"
+}

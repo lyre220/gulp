@@ -56,6 +56,7 @@
                 <button class="pub-btn pub-btn-l pub-btn-stacked j-back-transaction-pwd">确认</button>
             </div>
         </div>
+        <div class="acc-traderpw-area"></div>
     </div>
 </div>
 
@@ -84,18 +85,31 @@
      {{/if}}
 </script>
 
+<script type="text/html" id="RegionsListData">
+    {{if Regionsflag}}
+    <div class="pop-coverbg " id="pop-areaboxMask"></div>
+    <div class="pop-areabox" id="pop-areabox" >
+        <ul>
+            {{each list value i}}
+            <li>
+                <!-- <span>{{value.addTime}}</span> -->
+                <em data-i18n="{{value.desc}}"></em>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+</script>
 <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/zepto.min.js"></script>
 <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/sea.js"></script>
 <script type="text/javascript" src="../../../assets/js/common/common.js"></script>
-<script type="text/javascript" src="//resources.soqi.cn/201808082200/mp/js/language/language.js?v=1533894291"></script>
+<script type="text/javascript" src="../../../assets/js/language/language.js"></script>
 <!-- TODO !!! -->
 <!-- 国际化脚本地址 -->
 <script>
     seajs.use("acc/traderpw/traderpw_set");
-    execI18n(['common','acc_home'],['common','acc_home'],function(localize){
-                localize('body,title');
-                localize('#userName',{'name' : ''});
-                localize('#idCard',{'idCard' : ''});
+    execI18n(['common','acc_home','acc_traderpw'],['common','acc_home','acc_traderpw'],function(localize){
+                localize('body,title');//配置语言包替换点
             });
 </script>
 </body>

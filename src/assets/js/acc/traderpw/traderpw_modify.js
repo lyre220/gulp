@@ -16,6 +16,7 @@ define(function(require, exports, module) {
         GetPhoneStata:function(){
             console.log('GetPhoneStata');
             ajaxdata.OperateRemote.ajaxGetPhoneStata.success = function(data){
+                console.log(data);
                 var phone = data.phone;
                 var phoneVal = phone.substr(0, 3) + '****' + phone.substr(7);
                 var fg = data.stata;
