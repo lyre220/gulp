@@ -56,7 +56,7 @@ if(seajs != null){
             });
         }
     });
-    seajs.use(["common/cssHref","common/pubPopup","data/common/mock"]);
+    seajs.use(["common/cssHref","common/pubPopup","common/validation","data/common/mock"]);
 }
 
 

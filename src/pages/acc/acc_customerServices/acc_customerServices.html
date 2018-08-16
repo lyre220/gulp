@@ -21,27 +21,30 @@
 	<link rel="stylesheet" type="text/css" data-href="@/css/common/base.css">
 	<link rel="stylesheet" type="text/css" data-href="@/css/common/common.css">
 	<link rel="stylesheet" type="text/css" data-href="@/css/common/icPubfont.css">
-	<link rel="stylesheet" type="text/css" data-href="@/css/acc/contactService/contactService.css">
+	<link rel="stylesheet" type="text/css" data-href="@/css/acc/customerServices/customerServices.css">
 	<script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/include.js"></script>
 </head>
 
-<body>
+<body style="display:none;">
 	<div class="viewbox">
 		<include src="../../common/header.html"></include>
 		<div class="wrapbox">
 			<div class="acc-contact-service">
-				<div class="service-time">
+				<div class="service-time"  data-i18n="todo">
 					(客服服务时间：周一到周五9：00-18：00)
 				</div>
 				<div class="contact-way border-b">
-					<span>客服电话</span>
-					<span class="flex">15985861797</span>
-					<button>拨打电话</button>
+					<span data-i18n="todo">客服电话</span>
+					<span class="flex customerServicesMobile1">15985861797</span>
+					<a href="tel:15985861797">
+						<button data-i18n="todo">拨打电话</button>
+					</a>
+					
 				</div>
 				<div class="contact-way">
-					<span>客服微信</span>
-					<span class="flex">18059287269 </span>
-					<button class="wechat-contact">微信联系</button>
+					<span data-i18n="todo">客服微信</span>
+					<span class="flex customerServicesMobile2">18059287269 </span>
+					<button class="wechat-contact" data-i18n="todo">微信联系</button>
 				</div>
 			</div>
 			
@@ -49,9 +52,10 @@
 		<div class="pop-coverbg flex-center">
 			<div class="service-wechat">
 				<div class="qr-code">
-					<img src="../../../assets/img/service_QR_code.png" alt="客服二维码">
+					<img alt="客服二维码">
+					<!-- <img src="../../../assets/img/service_QR_code.png" alt="客服二维码"> -->
 				</div>
-				<p>长按识别二维码添加客服微信</p>
+				<p data-i18n="todo">长按识别二维码添加客服微信</p>
 				<div class="close ic-pubfont ic-close">
 				</div>
 			</div>
@@ -61,8 +65,12 @@
 	<script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/zepto.min.js"></script>
 	<script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/sea.js"></script>
 	<script type="text/javascript" src="../../../assets/js/common/common.js"></script>
+	<script type="text/javascript" src="../../../assets/js/language/language.js"></script>
 	<script>
-		seajs.use("acc/contactService/contactService");
+		seajs.use("acc/customerServices/customerServices");
+		execI18n(['common','acc_home','acc_traderpw'],['common','acc_home','acc_traderpw'],function(localize){
+                localize('body,title');//配置语言包替换点
+            });
 	</script>
 </body>
 
