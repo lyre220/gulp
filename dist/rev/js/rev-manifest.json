@@ -1,16 +1,14 @@
 {
-  "acc/contactService/contactService.js": "acc/contactService/contactService-110f67b7ee.js",
-  "acc/traderpw/traderpw_modify.js": "acc/traderpw/traderpw_modify-53a1f0cf6a.js",
-  "acc/traderpw/traderpw_set.js": "acc/traderpw/traderpw_set-b6295a6f14.js",
-  "common/common.js": "common/common-4261167a5c.js",
+  "acc/customerServices/customerServices.js": "acc/customerServices/customerServices-c208e650f8.js",
+  "acc/traderpw/traderpw_modify.js": "acc/traderpw/traderpw_modify-db87559efe.js",
+  "acc/traderpw/traderpw_set.js": "acc/traderpw/traderpw_set-845895efa3.js",
+  "common/common.js": "common/common-029f705aca.js",
   "common/cssHref.js": "common/cssHref-ecc9af941c.js",
   "common/pubPopup.js": "common/pubPopup-d97af4ce93.js",
   "common/template.js": "common/template-e0c328b188.js",
-  "data/acc/traderpw/ajax_traderpw_set.js": "data/acc/traderpw/ajax_traderpw_set-9b28063def.js",
+  "common/validation.js": "common/validation-74ac84cbef.js",
+  "data/acc/customerServices/ajax_customerServices.js": "data/acc/customerServices/ajax_customerServices-0db8526fb5.js",
+  "data/acc/traderpw/ajax_traderpw_set.js": "data/acc/traderpw/ajax_traderpw_set-c495f1aac8.js",
   "data/common/mock.js": "data/common/mock-81e7ad2d9a.js",
-  "data/common/operate.js": "data/common/operate-230a0e5808.js",
-  "language/i18next.min.js": "language/i18next-1753055d9a.min.js",
-  "language/i18nextXHRBackend.js": "language/i18nextXHRBackend-e5ca0615a5.js",
-  "language/language.js": "language/language-2b0417a2f8.js",
-  "language/loc-i18next.js": "language/loc-i18next-18209273b6.js"
+  "data/common/operate.js": "data/common/operate-230a0e5808.js"
 }

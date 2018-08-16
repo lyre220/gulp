@@ -23,7 +23,7 @@ gulp.task('cleanjs',function(){
     return gulp.src('js',{read:false}).pipe(clean());
 });
 
-gulp.task('css', ['cleancss'], function() {//- 创建一个名为 concat 的 task
+gulp.task('css', ['cleancss'], function() {//- 创建一个名为 css 的 task
     gulp.src([app.srcPath + '/assets/css/*/*.css',app.srcPath + '/assets/css/*/*/*.css']) //- 需要处理的css文件，放到一个字符串数组里
     //.pipe(concat('wrap.min.css')) //- 合并后的文件名
         .pipe(minifyCss())//- 压缩处理成一行
@@ -33,8 +33,8 @@ gulp.task('css', ['cleancss'], function() {//- 创建一个名为 concat 的 tas
         .pipe(gulp.dest(app.prdPath +'/rev/css'));//- 将 rev-manifest.json 保存到 rev 目录内
 });
 
-gulp.task('js', ['cleanjs'], function() {//- 创建一个名为 concat 的 task
-    gulp.src([app.srcPath +'/assets/js/*/*.js',app.srcPath +'/assets/js/*/*/*.js',app.srcPath +'/assets/js/*/*/*/*.js'])                 //- 需要处理的js文件，放到一个字符串数组里
+gulp.task('js', ['cleanjs'], function() {//- 创建一个名为 js 的 task
+    gulp.src([app.srcPath +'/assets/js/*/*.js',app.srcPath +'/assets/js/*/!(devolve)/*.js',app.srcPath +'/assets/js/*/*/*/*.js'])                 //- 需要处理的js文件，放到一个字符串数组里
     //.pipe(concat('wrap.min.js')) //- 合并后的文件名
         .pipe(jshint())//- 压缩处理成一行
        // .pipe(uglify())
@@ -43,6 +43,13 @@ gulp.task('js', ['cleanjs'], function() {//- 创建一个名为 concat 的 task
         .pipe(rev.manifest())//- 生成一个rev-manifest.json
         .pipe(gulp.dest(app.prdPath+'/rev/js'));//- 将 rev-manifest.json 保存到 rev 目录内
 });
+
+gulp.task('devolve',function() {//- 创建一个名为 devolve 的 task
+    gulp.src([app.srcPath +'/assets/js/*/devolve/*.js'])
+        .pipe(gulp.dest( app.prdPath +'/assets/js'))//- 输出文件本地
+});
+
+
 gulp.task('rev', function() {
     return gulp.src([ app.prdPath+'/rev/**/*.json', app.srcPath+'/pages/*/*.html', app.srcPath+'/pages/*/*/*.html'])//- 读取 rev-manifest.json 文件以及需要进行css名替换的文件。通过hash来精确定位到html模板中需要更改的部分，然后将修改成功的文件生成到指定目录
         .pipe(revCollector({
@@ -65,4 +72,4 @@ gulp.task('watch', function() {
 });
 */
 
-gulp.task('default', ['css','js','rev','i18n']);
+gulp.task('default', ['css','js','devolve','rev','i18n']);

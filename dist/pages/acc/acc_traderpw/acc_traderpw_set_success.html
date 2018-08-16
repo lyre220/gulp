@@ -13,12 +13,12 @@
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="Cache" content="no-cache">
     <link rel="stylesheet" type="text/css" data-href="@/css/common/base-f4a4cd7c59.css">
-    <link rel="stylesheet" type="text/css" data-href="@/css/common/common-ecaaf4c632.css">
+    <link rel="stylesheet" type="text/css" data-href="@/css/common/common-9988a22266.css">
     <link rel="stylesheet" type="text/css" data-href="@/css/common/icPubfont-98734ad292.css">
-    <link rel="stylesheet" type="text/css" data-href="@/css/acc/traderpw/traderpw-7dae7798df.css">
+    <link rel="stylesheet" type="text/css" data-href="@/css/acc/traderpw/traderpw-b20c4a4ab5.css">
     <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/include.js"></script>
 </head>
-<body>
+<body style="display: none;">
 <div class="viewbox">
     <include src="../../common/header.html"></include>
     <div class="wrapbox">
@@ -33,32 +33,39 @@
         <!--交易成功-->
         <div class="acc-traderpw-success mt-100">
             <i class="ic-pubfont ic-success"></i>
-            <p class="text mt-30">交易密码设置成功,请牢记！</p>
-            <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked mt-50">返回" 我的钱包 "</a>
+            <p class="text mt-30" data-i18n="setupSuccessfully"></p>
+            <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked mt-50"  data-i18n="ok"></a>
         </div>
         <!--交易成功 end-->
     </div>
 </div>
 <script type="text/html" id="traderpwStatus">
-    {{if !setStatus}}
+    <!-- {{if !setStatus}}
     <div class="acc-traderpw-set-success">
         <i class="ic-pubfont ic-closed"></i>
-        <p class="text mt-30">交易密码设置失败！</p>
-        <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked pub-btn-disable mt-50">返回" 我的钱包 "</a>
+        <p class="text mt-30" data-i18n="todo">交易密码设置失败！</p>
+        <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked pub-btn-disable mt-50" data-i18n="todo">返回" 我的钱包 "</a>
     </div>
     {{else}}
     <div class="acc-traderpw-set-success">
         <i class="ic-pubfont ic-success"></i>
-        <p class="text mt-30">交易密码设置成功,请牢记！</p>
-        <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked mt-50">返回" 我的钱包 "</a>
+        <p class="text mt-30" data-i18n="todo">交易密码设置成功,请牢记！</p>
+        <a href="javascript:" class="pub-btn pub-btn-m pub-btn-stacked mt-50" data-i18n="todo">返回" 我的钱包 "</a>
     </div>
-    {{/if}}
+    {{/if}} -->
 </script>
 <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/zepto.min.js"></script>
 <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/sea.js"></script>
-<script type="text/javascript" src="../../../assets/js/common/common-4261167a5c.js"></script>
+<script type="text/javascript" src="../../../assets/js/common/common-029f705aca.js"></script>
+<script type="text/javascript" src="../../../assets/js/language/devolve/language.js"></script>
 <script>
-    seajs.use("acc/traderpw/traderpw_set");
+    $('.acc-traderpw-success a').on('click',()=>{
+        //TODO
+        window.location.href = 'http://mp.soqitest.com/cpl/in2MyWallet.xhtml'
+    })
+    execI18n(['common','acc_home','acc_traderpw'],['common','acc_home','acc_traderpw'],function(localize){
+                localize('body,title');//配置语言包替换点
+            });
 </script>
 </body>
 </html>

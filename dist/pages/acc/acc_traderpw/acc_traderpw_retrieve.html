@@ -13,83 +13,123 @@
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="Cache" content="no-cache">
     <link rel="stylesheet" type="text/css" data-href="@/css/common/base-f4a4cd7c59.css">
-    <link rel="stylesheet" type="text/css" data-href="@/css/common/common-ecaaf4c632.css">
+    <link rel="stylesheet" type="text/css" data-href="@/css/common/common-9988a22266.css">
     <link rel="stylesheet" type="text/css" data-href="@/css/common/icPubfont-98734ad292.css">
-    <link rel="stylesheet" type="text/css" data-href="@/css/acc/traderpw/traderpw-7dae7798df.css">
+    <link rel="stylesheet" type="text/css" data-href="@/css/acc/traderpw/traderpw-b20c4a4ab5.css">
     <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/include.js"></script>
 </head>
 <body style="display:none;">
 <div class="viewbox">
     <include src="../../common/header.html"></include>
     <div class="wrapbox">
-        <div class="acc-traderpw">
-            <h1 class="sub-item-hd">账号验证</h1>
+        <div class="acc-traderpw j-acc-traderpw-retrieve">
+            <h1 class="sub-item-hd" data-i18n="accountVerify"></h1>
             <div class="acc-traderpw-tell"></div>
-            <h1 class="sub-item-hd">请输入个人信息</h1>
+            <h1 class="sub-item-hd" data-i18n="fillPersonalInfo"></h1>
             <label class="input-item">
-                <span class="mark">姓名</span>
-                <input type="text" class="flex pub-input" name="name" placeholder="请输入真实姓名">
+                <span class="mark" data-i18n="setTransactionPwd.name"></span>
+                <input type="text" class="flex pub-input" name="name" data-i18n="[placeholder]setTransactionPwd.fillName" id="userName">
             </label>
             <label class="input-item" data-action="shopPopArea">
-                <span class="mark">地区</span>
-                <div class="flex areaNamebox">中国</div>
-                <i claSs="ic-pubfont ic-down"></i>
+                <span class="mark"  data-i18n="region"></span>
+                <div class="flex areaNamebox" data-i18n="chooseValidCert"></div>
+                <i claSs="ic-pubfont ic-down"></i>      
             </label>
             <label class="input-item no-btborder">
-                <span class="mark">身份证号</span>
-                <input type="text" class="flex pub-input" name="idCard" id="idCard" data-flag="china" placeholder="请输入身份证号">
+                <span class="mark" data-i18n="idCard"></span>
+                <input type="text" class="flex pub-input" name="idCard" id="idCard" data-flag="china" data-i18n="[placeholder]setTransactionPwd.fillIDCard">
             </label>
-            <h1 class="sub-item-hd">请重设交易密码</h1>
+            <h1 class="sub-item-hd" data-i18n="pleaseSetTradePwd"></h1>
             <label class="input-item">
-                <span class="mark">交易密码</span>
-                <input type="password" class="flex pub-input" name="transactionPwd" placeholder="6位纯数字" maxlength="6">
+                <span class="mark" data-i18n="tradePwd"></span>
+                <input type="password" class="flex pub-input" name="transactionPwd"  maxlength="6" data-i18n="[placeholder]6Number">
             </label>
             <label class="input-item no-btborder">
-                <span class="mark">重复密码</span>
-                <input type="password" class="flex pub-input" name="reTransactionPwd" placeholder="再次确认交易密码" maxlength="6">
+                <span class="mark" data-i18n="repeatPwd"></span>
+                <input type="password" class="flex pub-input" name="reTransactionPwd"  maxlength="6" data-i18n="[placeholder]confirmTradePwd">
             </label>
             <div class="tips">
-                <span >找回密码遇到问题？</span>
-                <p class="mt-10">1.身份证号和真实姓名是您设置交易密码时所填写的信息</p>
-                <p>2.如遇到其他问题可致电客服:18059287269</p>
+                <span data-i18n="findPwdMeetProblem"></span>
+                <p class="mt-10">1、<span  data-i18n="idCardAndRealNameSameAs"></span> </p>
+                <p >2、 <span data-i18n="occurProblemCanCall"></span> </p>
             </div>
             <div class="pad-10 mt-10">
-                <button class="pub-btn pub-btn-l pub-btn-stacked j-back-transaction-pwd">确认</button>
+                <button class="pub-btn pub-btn-l pub-btn-stacked j-back-transaction-pwd" data-i18n="confirm"></button>
             </div>
         </div>
+        <div class="acc-traderpw-area"></div>
     </div>
 </div>
 
 <script type="text/html" id="phoneData">
-     {{ if !internationalFg }}
+    {{ if internationalFg}}
      <div class="pub-list">
          <span class="mark tellIcon"></span>
          <div class="flex">
-             <p class="telNum"  data-tell="{{phone}}">您绑定的手机号为<em>{{phoneVal}}</em></p>
+            <p class="telNum" >
+                 <span data-i18n="yourBindPhone"></span>
+                 <em data-tell="{{phone}}">{{phoneVal}}</em>
+            </p>
          </div>
      </div>
-     <div class="input-item mt-10">
-         <span class="mark">验证码</span>
-         <input type="number" placeholder="请输入验证码" class="flex pub-input">
-         <button class="pub-btn pub-btn-s pub-btn-light" data-action="getIdentifyCodeBtn">获取验证码</button>
+     <div class="input-item mt-10 check-code-box">
+         <span class="mark" data-i18n="verifyCode.verifyCode"></span>
+         <input type="number" data-i18n="[placeholder]verifyCode.fillVerifyCode"  class="flex pub-input check-code" name="checkCode">
+         <button class="pub-btn pub-btn-s pub-btn-light" data-action="getIdentifyCodeBtn" data-i18n="verifyCode.getVerifyCode"></button>
      </div>
-     <div class="acc-traderpw-tell-tips">收不到验证码？<em class="contactCode">联系客服</em></div>
+     <div class="acc-traderpw-tell-tips" >
+         <span data-i18n="cannotReceiveCode"></span>
+         <em class="contactCode" data-i18n="contactCustomerService"></em>
+    </div>
      {{else}}
      <div class="pub-list">
          <span class="mark tellIcon"></span>
          <div class="flex">
-             <p class="telNum" data-tell="{{phone}}">您绑定的手机号为<em>{{phoneVal}}</em></p>
+            <p class="telNum" >
+                <span data-i18n="yourBindPhone"></span>
+                <em data-tell="{{phone}}">{{phoneVal}}</em>
+            </p>
          </div>
      </div>
-     <div class="acc-traderpw-tell-tips">收不到验证码？<em class="contactCode">联系客服</em></div>
+     <div class="input-item mt-10 check-code-box">
+        <span class="mark" data-i18n="verifyCode.verifyCode"></span>
+        <input type="number" data-i18n="[placeholder]verifyCode.fillVerifyCode" class="flex pub-input check-code" name="checkCode">
+        <button class="pub-btn pub-btn-s pub-btn-light" data-action="getIdentifyCodeBtn" data-i18n="verifyCode.getVerifyCode"></button>
+    </div>
+     <div class="acc-traderpw-tell-tips"  >
+         <span data-i18n="onlySupportChinaMainLand"></span>
+          <br/> <em class="contactCode" data-i18n="contactCustomerService"></em>
+        </div>
      {{/if}}
 </script>
 
+<script type="text/html" id="RegionsListData">
+    {{if Regionsflag}}
+    <div class="pop-coverbg " id="pop-areaboxMask"></div>
+    <div class="pop-areabox" id="pop-areabox" >
+        <ul>
+            {{each list value i}}
+            <li>
+                <!-- <span>{{value.addTime}}</span> -->
+                <em data-i18n="{{value.desc}}"></em>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}
+</script>
+<input type="hidden" id="traderPasswordRetrieve" value="52">
 <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/zepto.min.js"></script>
 <script type="text/javascript" src="//staticresources.qiniu.soqi.cn/wdy/js/common/sea.js"></script>
-<script type="text/javascript" src="../../../assets/js/common/common-4261167a5c.js"></script>
+<script type="text/javascript" src="../../../assets/js/common/common-029f705aca.js"></script>
+<script type="text/javascript" src="../../../assets/js/language/devolve/language.js"></script>
 <script>
     seajs.use("acc/traderpw/traderpw_set");
+    execI18n(['common','acc_home','acc_traderpw'],['common','acc_home','acc_traderpw'],function(localize){
+                localize('body,title');//配置语言包替换点
+                localize('#userName',{'name' : '*妮'});
+                localize('#idCard',{'idCard' : '**************3020'});
+            });
 </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /**
  * API配置
  */
-var webRoot='/src';
+var webRoot='/dist';
 var apiWebRoot ='//mp.soqitest.com';
 // var apiWebRoot ='//wdy.soqitest.com';
 var mp_bak = "//mp.soqi.cn";
@@ -56,7 +56,7 @@ if(seajs != null){
             });
         }
     });
-    seajs.use(["common/cssHref","common/pubPopup","common/validation","common/headFilter","data/common/mock"]);
+    seajs.use(["common/cssHref","common/pubPopup","common/validation","data/common/mock"]);
 }
 
 

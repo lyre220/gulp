@@ -37,8 +37,6 @@ define(function(require, exports, module) {
         getWeiXinQRCode:function(phoneIdEcr){
             console.log('getWeiXinQRCode');
             ajaxdata.OperateRemote.findWeiXinQRCode.success = function (data) {
-                console.log('WeiXinQRCode-data');
-                console.log(data);
                 //TODO
                 let resultSet = data.resultSet
                 // let resultSet = '../../../assets/img/service_QR_code.png'
@@ -67,8 +65,6 @@ define(function(require, exports, module) {
      * 初始化事件
      */
     function initEvent() {
-        
-        console.log('initEvent');
         $('.wechat-contact').on('click',function(){
             $('.pop-coverbg').show()
         })
