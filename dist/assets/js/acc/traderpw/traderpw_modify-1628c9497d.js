@@ -10,6 +10,7 @@ define(function(require, exports, module) {
      * 初始化方法
      */
     var initMethod = {
+
         /**
         * 获取交易密码信息
         */
@@ -170,7 +171,7 @@ define(function(require, exports, module) {
                                 //TODO
                                 window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
                                 // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
-                            }, 2000);
+                            }, 1000);
                             break;
                     }
                 };

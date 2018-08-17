@@ -23,7 +23,7 @@ function interceptor(fun,before,after){
         }
     };
 }
-var debug = true;
+var debug = false;
 if(!debug){
     console.log = interceptor(console.log,function(){return debug;});
 }
@@ -56,7 +56,7 @@ if(seajs != null){
             });
         }
     });
-    seajs.use(["common/cssHref","common/pubPopup","common/validation","data/common/mock"]);
+    seajs.use(["common/cssHref","common/pubPopup","common/validation","common/headFilter","data/common/mock"]);
 }
 
 

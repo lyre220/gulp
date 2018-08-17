@@ -10,24 +10,6 @@ define(function(require, exports, module) {
      * 初始化方法
      */
     var initMethod = {
-        /**
-         * 获取手机状态
-         */
-        // GetPhoneStata:function(){
-        //     console.log('GetPhoneStata');
-        //     ajaxdata.OperateRemote.ajaxGetPhoneStata.success = function(data){
-        //         console.log(data);
-        //         var phone = data.phone;
-        //         var phoneVal = phone.substr(0, 3) + '****' + phone.substr(7);
-        //         var fg = data.stata;
-        //         var html = template("phoneData",{phone:phone,phoneVal:phoneVal,internationalFg:fg});
-        //         $('.acc-traderpw-tell').html(html);
-        //     };
-        //     ajaxdata.OperateRemote.ajaxGetPhoneStata.error = function(result){
-        //         pubPopup.noticeTis(result.errorMsg);
-        //     };
-        //     ajaxdata.OperateRemote.ajaxGetPhoneStata.submit();
-        // },
 
         /**
         * 获取交易密码信息
@@ -78,6 +60,7 @@ define(function(require, exports, module) {
                 }
             }, 1000);
             ajaxdata.OperateRemote.getCheckCode.success = function (data) {
+                //TODO
                 //将请求到的验证码绑定到输入框，本地测试用
                 $('.check-code').val(data.resultSet)
             };
@@ -89,7 +72,6 @@ define(function(require, exports, module) {
     };
 
     var modifyTransactionPwd = function(){
-        console.log('modifyTransactionPwd');
         var param = {};
         var modifyFlag = true;
         //参数组织
@@ -97,7 +79,6 @@ define(function(require, exports, module) {
             var that = $(this);
             var val = that.val();
             var name = that.attr('name');
-            console.log('参数组织');
             if (val) {
                 switch (name) {
                     case 'checkCode':
@@ -142,19 +123,14 @@ define(function(require, exports, module) {
                 }
 
             } else {
-                console.log('没有val');
                 pubPopup.noticeTis(that.attr('placeholder'));
                 modifyFlag = false;
                 return false;
             }
         });    
         if (modifyFlag) {
-            console.log('表单验证通过');
             if (param.newpwd === param.renewpwd) {
-                console.log('param');
-                console.log(param);
                 ajaxdata.OperateRemote.transactionPwdModify.success = function (data) {
-                    console.log(data);
                     switch (data.statusCode) {
                         case 789  :
                             pubPopup.noticeTis('系统异常', 'common.systemError');
@@ -192,9 +168,10 @@ define(function(require, exports, module) {
                         case 1666666 :
                             pubPopup.noticeTis('操作成功', 'company.opSuccess');
                             setTimeout(function () {
-                                // window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
-                                window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
-                            }, 2000);
+                                //TODO
+                                window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
+                                // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
+                            }, 1000);
                             break;
                     }
                 };
@@ -218,7 +195,6 @@ define(function(require, exports, module) {
         /**
          * 获取手机状态
          */
-        console.log('initData');
          initMethod.GetPhoneStata();
 
     }
@@ -230,7 +206,6 @@ define(function(require, exports, module) {
         /**
          * 获取验证码
          */
-        console.log('initEvent');
         curWindow.on('click','[data-action="getIdentifyCodeBtn"]',()=> {
             if(!$(this).hasClass('active')){
                 var tel = $('#telNum').attr('data-tell');
@@ -243,23 +218,24 @@ define(function(require, exports, module) {
          * 联系客服        
          */
         curWindow.on('click', '.contactCode',()=> {
-            // window.location.href = apiWebRoot + '/acc/acc_customerServices/acc_customerServices.html';
-            window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_customerServices/acc_customerServices.html';
+            //TODO
+            window.location.href = apiWebRoot + '/acc/acc_customerServices/acc_customerServices.html';
+            // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_customerServices/acc_customerServices.html';
         });
         
         /**
          * 设置交易密码
          */
         $('.j-back-transaction-pwd').on(end, ()=> {
-            console.log('.j-back-transaction-pwd');
             modifyTransactionPwd();
         });
         /**
          * 找回交易密码
          */
         $('.acc-retrieve-password a').on('click',()=>{
-            // window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_retrieve.html'
-            window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_retrieve.html';
+            //TODO
+            window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_retrieve.html'
+            // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_retrieve.html';
         })
     }
 

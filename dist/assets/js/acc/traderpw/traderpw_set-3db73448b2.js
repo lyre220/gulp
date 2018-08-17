@@ -13,7 +13,7 @@ define(function (require, exports, module) {
      */
     var initMethod = {
         /**
-         * 获取交易密码信息-获取手机状态
+         * 获取交易密码信息
          */
         GetPhoneStata: function () {
             console.log('GetPhoneStata');
@@ -46,8 +46,6 @@ define(function (require, exports, module) {
         getRegionsList: function () {
             console.log('getRegionsList');
             ajaxdata.OperateRemote.getRegionsList.success = function (data) {
-                // console.log('data2333');
-                // console.log(data);
                 list = data.resultSet;
                 Regionsflag = data.success
 
@@ -69,6 +67,7 @@ define(function (require, exports, module) {
             var time = 3;
             var type = 4; //交易密码设置
             var obj = $('[data-action="getIdentifyCodeBtn"]');
+            // if(isInternationalNumber){
             obj.addClass('active');
             $('.acc-traderpw-tell-tips').hide();
             var send_success = setInterval(function () {
@@ -81,6 +80,7 @@ define(function (require, exports, module) {
                 }
             }, 1000);
             ajaxdata.OperateRemote.getCheckCode.success = function (data) {
+                //TODO
                 //将获取到的验证码绑定到输入框，本地测试用
                 $('.check-code').val(data.resultSet)
             };
@@ -88,7 +88,11 @@ define(function (require, exports, module) {
                 pubPopup.noticeTis(result.errorMsg);
             };
             ajaxdata.OperateRemote.getCheckCode.submit(type);
-
+            // }
+            // else{
+            //     $('.acc-traderpw-tell-tips').show();
+            //     $('.check-code-box').hide();
+            // }
 
         }
     };
@@ -195,12 +199,8 @@ define(function (require, exports, module) {
         });
 
         if (updateFlag) {
-            console.log('表单验证通过');
             if (param.transactionPwd == param.reTransactionPwd) {
-                console.log('param');
-                console.log(param);
                 ajaxdata.OperateRemote.setTransactionPwd.success = function (data) {
-                    console.log(data);
                     switch (data.statusCode) {
                         case 9003:
                             pubPopup.noticeTis('错误的身份证号', 'setTransactionPwd.idCardWrong');
@@ -235,7 +235,7 @@ define(function (require, exports, module) {
                                 //TODO
                                  window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
                                 //  window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
-                            }, 2000);
+                            }, 1000);
                             break;
                     }
                 };
@@ -324,12 +324,8 @@ define(function (require, exports, module) {
         });
 
         if (updateFlag) {
-            console.log('表单验证通过');
             if (param.transactionPwd == param.reTransactionPwd) {
-                console.log('traderpw-retrieve-param');
-                console.log(param);
                 ajaxdata.OperateRemote.backTransactionPwd.success = function (data) {
-                    console.log(data);
                     switch (data.statusCode) {
                         case 789:
                             pubPopup.noticeTis('系统异常', 'common.systemError');
@@ -367,7 +363,7 @@ define(function (require, exports, module) {
                                 //TODO
                                 window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
                                 // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
-                            }, 2000);
+                            }, 1000);
                             break;
                     }
                 };
@@ -395,8 +391,6 @@ define(function (require, exports, module) {
         initMethod.GetPhoneStata();
         initMethod.getRegionsList();
     }
-
-
     /**
      * 初始化事件
      */
@@ -436,7 +430,6 @@ define(function (require, exports, module) {
          * 联系客服
          */
         curWindow.on('click', '.contactCode', function () {
-            //TODO
             window.location.href = apiWebRoot + '/acc/acc_customerServices/acc_customerServices.html';
             // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_customerServices/acc_customerServices.html';
         });

@@ -13,27 +13,6 @@ define(function (require, exports, module) {
      */
     var initMethod = {
         /**
-         * 获取手机状态
-         */
-        // GetPhoneStata: function () {
-        //     console.log('GetPhoneStata');
-        //     ajaxdata.OperateRemote.ajaxGetPhoneStata.success = function (data) {
-        //         var phone = data.phone;
-        //         var phoneVal = phone.substr(0, 3) + '****' + phone.substr(7);
-        //         var fg = data.stata;
-        //         var html = template("phoneData", {
-        //             phone: phone,
-        //             phoneVal: phoneVal,
-        //             internationalFg: fg
-        //         });
-        //         $('.acc-traderpw-tell').html(html);
-        //     };
-        //     ajaxdata.OperateRemote.ajaxGetPhoneStata.error = function (result) {
-        //         pubPopup.noticeTis(result.errorMsg);
-        //     };
-        //     ajaxdata.OperateRemote.ajaxGetPhoneStata.submit();
-        // },
-        /**
          * 获取交易密码信息
          */
         GetPhoneStata: function () {
@@ -67,8 +46,6 @@ define(function (require, exports, module) {
         getRegionsList: function () {
             console.log('getRegionsList');
             ajaxdata.OperateRemote.getRegionsList.success = function (data) {
-                // console.log('data2333');
-                // console.log(data);
                 list = data.resultSet;
                 Regionsflag = data.success
 
@@ -103,6 +80,7 @@ define(function (require, exports, module) {
                 }
             }, 1000);
             ajaxdata.OperateRemote.getCheckCode.success = function (data) {
+                //TODO
                 //将获取到的验证码绑定到输入框，本地测试用
                 $('.check-code').val(data.resultSet)
             };
@@ -125,8 +103,6 @@ define(function (require, exports, module) {
 
     var PopArea = {
         showPopArea() {
-            // console.log('list');
-            // console.log(list);
             var html = template("RegionsListData", {
                 list: list,
                 Regionsflag: Regionsflag
@@ -146,8 +122,6 @@ define(function (require, exports, module) {
             var areaName = obj.find('em').html();
             $(showbox).html(areaName);
             PopArea.hidePopArea();
-
-            // $('#idCard').attr('data-flag',obj.attr('data-flag'));
         }
 
     }
@@ -225,12 +199,8 @@ define(function (require, exports, module) {
         });
 
         if (updateFlag) {
-            console.log('表单验证通过');
             if (param.transactionPwd == param.reTransactionPwd) {
-                console.log('param');
-                console.log(param);
                 ajaxdata.OperateRemote.setTransactionPwd.success = function (data) {
-                    console.log(data);
                     switch (data.statusCode) {
                         case 9003:
                             pubPopup.noticeTis('错误的身份证号', 'setTransactionPwd.idCardWrong');
@@ -262,9 +232,10 @@ define(function (require, exports, module) {
                         case 1666666:
                             pubPopup.noticeTis('操作成功', 'company.opSuccess'); 
                             setTimeout(function () {
-                                 // window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
-                                 window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
-                            }, 2000);
+                                //TODO
+                                 window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
+                                //  window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
+                            }, 1000);
                             break;
                     }
                 };
@@ -353,12 +324,8 @@ define(function (require, exports, module) {
         });
 
         if (updateFlag) {
-            console.log('表单验证通过');
             if (param.transactionPwd == param.reTransactionPwd) {
-                console.log('traderpw-retrieve-param');
-                console.log(param);
                 ajaxdata.OperateRemote.backTransactionPwd.success = function (data) {
-                    console.log(data);
                     switch (data.statusCode) {
                         case 789:
                             pubPopup.noticeTis('系统异常', 'common.systemError');
@@ -393,8 +360,9 @@ define(function (require, exports, module) {
                         case 1666666:
                             pubPopup.noticeTis('操作成功', 'company.opSuccess'); 
                             setTimeout(function () {
-                                // window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
-                                window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
+                                //TODO
+                                window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
+                                // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
                             }, 2000);
                             break;
                     }
@@ -423,61 +391,6 @@ define(function (require, exports, module) {
         initMethod.GetPhoneStata();
         initMethod.getRegionsList();
     }
-
-
-    //交易密码找回--地区选择
-    // var PopArea ={
-
-    //     showPopArea:function(){
-    //         //获取证件
-    //         console.log('showPopArea');
-    //         var url = apiCardRules + '/acc/getCardRules.xhtml';
-    //         var uls = "";
-    //         console.log(url);
-    //         ajax.post(url,{},function(data){
-    //             if(data.resultSet != null){
-    //                 for(var i = 0;i< data.resultSet.length;i++){
-    //                     uls += '<li data-flag="china"><em>' + i18next.t(data.resultSet[i].desc) + '</em></li>';
-    //                 }
-    //             }
-    //             var html=''
-    //                 +'<div claSs="pop-coverbg active" id="pop-areaboxMask"></div>'
-    //                 + '<div class="pop-areabox" id="pop-areabox">'
-    //                 +   '<ul>'
-    //                 +       uls
-    //                 +   '</ul>'
-    //                 +'</div>';
-
-    //             if( $('#pop-areaboxMask').length==0){
-    //                 $('.viewbox').append(html);
-
-    //                 setTimeout(function(){
-    //                     $('.pop-areabox').addClass('anims active');
-    //                 },30)
-    //             }
-    //         });
-    //     },
-
-    //     hidePopArea:function(){
-    //         $('#pop-areaboxMask,#pop-areabox').remove();
-    //         return false;
-    //     },
-
-    //     choosePopArea:function(obj,showbox){
-    //         var areaName = obj.find('em').html();
-    //         $(showbox).html(areaName);
-    //         PopArea.hidePopArea();
-
-    //         $('#idCard').attr('data-flag',obj.attr('data-flag'));
-    //     }
-    // };
-
-
-
-
-
-
-
     /**
      * 初始化事件
      */
@@ -517,8 +430,8 @@ define(function (require, exports, module) {
          * 联系客服
          */
         curWindow.on('click', '.contactCode', function () {
-            // window.location.href = apiWebRoot + '/acc/acc_customerServices/acc_customerServices.html';
-            window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_customerServices/acc_customerServices.html';
+            window.location.href = apiWebRoot + '/acc/acc_customerServices/acc_customerServices.html';
+            // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_customerServices/acc_customerServices.html';
         });
 
         /**
