@@ -233,7 +233,7 @@ define(function (require, exports, module) {
                             pubPopup.noticeTis('操作成功', 'company.opSuccess'); 
                             setTimeout(function () {
                                 //TODO
-                                 window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
+                                 window.location.href = apiWebRoot + webRoot +'/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
                                 //  window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
                             }, 1000);
                             break;
@@ -361,9 +361,9 @@ define(function (require, exports, module) {
                             pubPopup.noticeTis('操作成功', 'company.opSuccess'); 
                             setTimeout(function () {
                                 //TODO
-                                window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
+                                window.location.href = apiWebRoot + webRoot +'/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
                                 // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
-                            }, 1000);
+                            }, 2000);
                             break;
                     }
                 };
@@ -430,7 +430,7 @@ define(function (require, exports, module) {
          * 联系客服
          */
         curWindow.on('click', '.contactCode', function () {
-            window.location.href = apiWebRoot + '/acc/acc_customerServices/acc_customerServices.html';
+            window.location.href = apiWebRoot + webRoot +'/pages/acc/acc_customerServices/acc_customerServices.html';
             // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_customerServices/acc_customerServices.html';
         });
 

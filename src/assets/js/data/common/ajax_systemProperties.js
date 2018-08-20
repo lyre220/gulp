@@ -42,12 +42,12 @@ define(function(require, exports, module) {
      * 获取mp头部导航
      */
     OperateRemote.findMpHeader = new pubOperate();
-    OperateRemote.findMpHeader.submit = function(){
+    OperateRemote.findMpHeader.submit = function(param){
         console.log("获取mp头部导航");
         var _this = this;
-        var url = apiWebRoot + "/msg/findMpHeader.xhtml";
-        var data = {}
-        var callback = function (res) {
+        var url = apiWebRoot + "/msg/findMpHeader.xhtml";//请求地址
+        var data = {} //请求参数
+        var callback = function (res) { //请求回调
             console.log(res.resultSets);
             if (res.success) {
                 _this.success(res.resultSets);

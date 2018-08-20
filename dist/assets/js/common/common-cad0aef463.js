@@ -23,7 +23,7 @@ function interceptor(fun,before,after){
         }
     };
 }
-var debug = false;
+var debug = true;
 if(!debug){
     console.log = interceptor(console.log,function(){return debug;});
 }
