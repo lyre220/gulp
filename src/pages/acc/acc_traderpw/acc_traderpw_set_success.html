@@ -61,7 +61,8 @@
 <script>
     $('.acc-traderpw-success a').on('click',()=>{
         //TODO
-        window.location.href = 'http://mp.soqitest.com/cpl/in2MyWallet.xhtml'
+        // window.location.href = 'http://mp.soqitest.com/cpl/in2MyWallet.xhtml'
+        window.location.href = apiWebRoot+'/cpl/in2MyWallet.xhtml'
     })
     execI18n(['common','acc_home','acc_traderpw'],['common','acc_home','acc_traderpw'],function(localize){
                 localize('body,title');//配置语言包替换点

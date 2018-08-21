@@ -80,8 +80,8 @@ var GetCookie = function(name){
 };
 $.ajax = interceptor($.ajax,function (param) {
     param.beforeSend = function(xhr) {
-        xhr.setRequestHeader("Authorization", 'A92E41606B7729747CB0BCD31B48A3E7');
-        // xhr.withCredentials = true;
+        // xhr.setRequestHeader("Authorization", 'A92E41606B7729747CB0BCD31B48A3E7');
+        xhr.withCredentials = true;//允许用户获取当前页面的cookie
     };
 });
 

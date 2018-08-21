@@ -23,13 +23,13 @@ define(function (require, exports, module) {
                 var phoneVal = phone.substr(0, 3) + '****' + phone.substr(7);
                 isInternationalNumber = data.resultSets.isInlandNumber;
                 // isInternationalNumber = false;
-                var html = template("phoneData", { //phoneData 模板数据渲染挂载点
+                var html = template("phoneData", {
                     phone: phone,
-                    phoneVal: phoneVal, //{}渲染的数据
+                    phoneVal: phoneVal,
                     internationalFg: isInternationalNumber
                 });
-                $('.acc-traderpw-tell').html(html);//数据渲染位置
-                localize('.acc-traderpw-tell'); //国际化语言包挂载点
+                $('.acc-traderpw-tell').html(html);
+                localize('.acc-traderpw-tell');
                 if (!isInternationalNumber) {
                     $('.acc-traderpw-tell-tips').show();
                     $('.check-code-box').hide();
