@@ -23,13 +23,13 @@ define(function (require, exports, module) {
                 var phoneVal = phone.substr(0, 3) + '****' + phone.substr(7);
                 isInternationalNumber = data.resultSets.isInlandNumber;
                 // isInternationalNumber = false;
-                var html = template("phoneData", {
+                var html = template("phoneData", { //phoneData 模板数据渲染挂载点
                     phone: phone,
-                    phoneVal: phoneVal,
+                    phoneVal: phoneVal, //{}渲染的数据
                     internationalFg: isInternationalNumber
                 });
-                $('.acc-traderpw-tell').html(html);
-                localize('.acc-traderpw-tell');
+                $('.acc-traderpw-tell').html(html);//数据渲染位置
+                localize('.acc-traderpw-tell'); //国际化语言包挂载点
                 if (!isInternationalNumber) {
                     $('.acc-traderpw-tell-tips').show();
                     $('.check-code-box').hide();
@@ -64,7 +64,7 @@ define(function (require, exports, module) {
      */
     var identifyCode = {
         endTimeCode: function () {
-            var time = 3;
+            var time = 60;
             var type = 4; //交易密码设置
             var obj = $('[data-action="getIdentifyCodeBtn"]');
             // if(isInternationalNumber){
@@ -82,7 +82,7 @@ define(function (require, exports, module) {
             ajaxdata.OperateRemote.getCheckCode.success = function (data) {
                 //TODO
                 //将获取到的验证码绑定到输入框，本地测试用
-                $('.check-code').val(data.resultSet)
+                // $('.check-code').val(data.resultSet)
             };
             ajaxdata.OperateRemote.getCheckCode.error = function (result) {
                 pubPopup.noticeTis(result.errorMsg);
@@ -233,7 +233,7 @@ define(function (require, exports, module) {
                             pubPopup.noticeTis('操作成功', 'company.opSuccess'); 
                             setTimeout(function () {
                                 //TODO
-                                 window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
+                                 window.location.href = apiWebRoot + webRoot +'/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
                                 //  window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
                             }, 1000);
                             break;
@@ -361,9 +361,9 @@ define(function (require, exports, module) {
                             pubPopup.noticeTis('操作成功', 'company.opSuccess'); 
                             setTimeout(function () {
                                 //TODO
-                                window.location.href = apiWebRoot + '/acc/acc_traderpw/acc_traderpw_set_success.html';
+                                window.location.href = apiWebRoot + webRoot +'/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
                                 // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_traderpw/acc_traderpw_set_success.html';
-                            }, 1000);
+                            }, 2000);
                             break;
                     }
                 };
@@ -398,11 +398,9 @@ define(function (require, exports, module) {
         /**
          * 获取验证码
          */
-        console.log('initEvent');
         curWindow.on('click', '[data-action="getIdentifyCodeBtn"]', function () {
             if (!$(this).hasClass('active')) {
                 var tel = $('#telNum').attr('data-tell');
-                // initMethod.getIdentifyCode(tel);
                 identifyCode.endTimeCode(tel);
             }
         });
@@ -430,7 +428,7 @@ define(function (require, exports, module) {
          * 联系客服
          */
         curWindow.on('click', '.contactCode', function () {
-            window.location.href = apiWebRoot + '/acc/acc_customerServices/acc_customerServices.html';
+            window.location.href = apiWebRoot + webRoot +'/pages/acc/acc_customerServices/acc_customerServices.html';
             // window.location.href = 'http://192.168.0.193:32768/src/pages/acc/acc_customerServices/acc_customerServices.html';
         });
 

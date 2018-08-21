@@ -45,14 +45,16 @@ define(function (require, exports, module) {
         //菜单按钮
         curWindow.on('click','#moremenu',function (){
             // if(SystemProperties.islogin){
-                if(!$('#topmenu').hasClass('active')){
-                    $('#topmenu').addClass('active');
-                    $('#pop-areaboxMask').addClass('pub-popmaskbg');//开启遮罩层
-                    $('.j-message .pub-buttle').text(messageCount);
-                    localize('.header');//配置语言包替换点
+                if(!$('#topmenu').hasClass('active') && !$('#pub-popmaskbg').hasClass('pub-popmaskbg')){
+                    setTimeout(() => {
+                        $('#topmenu').addClass('active');
+                        $('#pub-popmaskbg').addClass('pub-popmaskbg');//开启遮罩层
+                        $('.j-message .pub-buttle').text(messageCount);
+                        localize('.header');//配置语言包替换点
+                    }, 50);    
                 }else{
                     $('#topmenu').removeClass('active')
-                    $('#pop-areaboxMask').removeClass('pub-popmaskbg')//关闭遮罩层
+                    $('#pub-popmaskbg').removeClass('pub-popmaskbg')//关闭遮罩层
                 }
                 
             // }else{
@@ -80,6 +82,16 @@ define(function (require, exports, module) {
         //管理中心
         curWindow.on('click','#head-soqi',function () {
             window.location.href = apiWebRoot + SystemProperties.managementUrl;
+        });
+        //关闭遮罩层
+        curWindow.on(end,'#pub-popmaskbg',function () {
+            // if($('#topmenu').hasClass('active') && $('#pop-areaboxMask').hasClass('pub-popmaskbg')){
+                $('#topmenu').removeClass('active')
+                $('#pub-popmaskbg').removeClass('pub-popmaskbg')//关闭遮罩层
+                return false;  
+            // }else{
+            //     alert('233331')
+            // }
         });
     }
     initData();
